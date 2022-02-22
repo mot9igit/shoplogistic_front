@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffffff">
+<title>Shoplogistic</title>
+<!-- <link rel="stylesheet" href="libs/bootstrap4/css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="libs/owlcarousel2/dist/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="libs/fontawesome5/css/all.min.css">
+<link rel="stylesheet" href="libs/fontawesome5/css/v4-shims.min.css">
+<link rel="stylesheet" href="libs/fancybox/dist/jquery.fancybox.min.css">
+<link rel="stylesheet" href="css/style.css?id=90">
+</head>
+
+<body>
+  <div class="sl_wrapper">
+    <header class="sl_header">
+
+</header>
+    <main class="sl_main">
+      <section class="sl-def-section content withovh">
+        <div class="sl-base_wrapper">
+          <div class="cart_wrap">
+            <div class="sl-row sl-align-items-center">
+              <div class="d-col-lg-8">
+                <div class="msCart">
+                  <div class="sl-row">
+                    <div class="d-col-6">
+                      <h1>Корзина</h1>
+                    </div>
+                    <div class="d-col-6 text-right">
+                      <form method="post" class="ms2_form">
+                        <button type="submit" name="ms2_action" value="cart/clean" class="sl-btn sl-btn-text">
+                          Очистить корзину
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="cart-holder">
+                    <!-- ROW -->
+                    <div class="cart_row" id="5c7fbcaeb74569ee4e80e00a47e70602">
+                      <div class="deleter">
+                        <form method="post" class="ms2_form">
+                          <input type="hidden" name="key" value="5c7fbcaeb74569ee4e80e00a47e70602">
+                          <button class="sl-btn sl-btn-text" type="submit" name="ms2_action" value="cart/remove"
+                            title="Удалить"><i class="fa fa-trash" aria-hidden="true"></i>
+                          </button>
+                        </form>
+                      </div>
+                      <div class="sl-row sl-align-items-center">
+                        <div class="d-col-6 d-col-md-2">
+                          <div class="image">
+                            <a href="#">
+                              <img src="img/product.png"
+                                alt=""
+                                title="">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="d-col-6 d-col-md-4">
+                          <span class="article">ИЗЭ-05М</span>
+                          <a href="#" class="name">Измельчитель зерна 250 кг/час</a>
+                        </div>
+                        <div class="d-col-6 d-col-md-4">
+                          <form method="post" class="ms2_form mobile-center" role="form">
+                            <input type="hidden" name="key" value="5c7fbcaeb74569ee4e80e00a47e70602">
+                            <div class="cb-qnt sl-quantity inliner vam">
+                              <button type="button" class="btn-count minus">-</button>
+                              <input type="text" name="count" class="counter" value="1" data-krat="1" data-min="1">
+                              <button type="button" class="btn-count plus">+</button>
+                            </div>
+                            <button class="hidden" type="submit" name="ms2_action" value="cart/change">
+                              <i class="fa fa-refresh" aria-hidden="true"></i>
+                            </button>
+                          </form>
+                        </div>
+                        <div class="d-col-6 d-col-md-2">
+                          <span class="price"><span>3 840</span> руб.</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- / ROW -->
+                  </div>
+                </div>
+                <div class="order_form">
+                  <form class="form-horizontal ms2_form" id="msOrder" method="post">
+                    <div class="form_block">
+                      <div class="form_block_title inliner vam">
+                        <span class="number">1</span>
+                        <span class="title">Доставка и оплата</span>
+                      </div>
+                      <div class="form_block_content">
+                        <div id="deliveries" class="mb-2">
+                          <div class="checkers form-group sl-row">
+                            <div class="d-col">
+                              <div class="checkbox">
+                                <label class="col-form-label delivery input-parent">
+                                  <input type="radio" name="delivery" value="1" id="delivery_1" data-payments="[1,3,4]"
+                                    checked="">
+                                  <div class="visual_block">
+                                    <div class="visual_block_inner">
+                                      <span class="label">Самовывоз</span>
+                                    </div>
+                                  </div>
+                                </label>
+                              </div>
+                            </div>
+                            <div class="d-col">
+                              <div class="checkbox">
+                                <label class="col-form-label delivery input-parent">
+                                  <input type="radio" name="delivery" value="4" id="delivery_4" data-payments="[1,3,4]">
+                                  <div class="visual_block">
+                                    <div class="visual_block_inner">
+                                      <span class="label">Доставка по Москве</span>
+                                      <p class="small">
+                                        Бесплатно от определенной суммы заказа </p>
+                                    </div>
+                                  </div>
+                                </label>
+                              </div>
+                            </div>
+                            <div class="d-col">
+                              <div class="checkbox">
+                                <label class="col-form-label delivery input-parent">
+                                  <input type="radio" name="delivery" value="5" id="delivery_5" data-payments="[1,3,4]">
+                                  <div class="visual_block">
+                                    <div class="visual_block_inner">
+                                      <span class="label">В регионы транспортной компанией (СДЕК, ДЛ, ATI)</span>
+                                      <p class="small">
+                                        Бесплатно до пункта отправки ТК </p>
+                                    </div>
+                                  </div>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="payments" class="mb-2">
+                          <div class="checkers form-group sl-row">
+                            <div class="d-col">
+                              <div class="checkbox">
+                                <label class="col-form-label payment input-parent" style="display: flex;">
+                                  <input type="radio" name="payment" value="1" id="payment_1" checked="">
+                                  <div class="visual_block">
+                                    <div class="visual_block_inner">
+                                      <span class="label">Оплата наличными</span>
+                                    </div>
+                                  </div>
+                                </label>
+                              </div>
+                            </div>
+                            <div class="d-col">
+                              <div class="checkbox">
+                                <label class="col-form-label payment input-parent" style="display: flex;">
+                                  <input type="radio" name="payment" value="3" id="payment_3">
+                                  <div class="visual_block">
+                                    <div class="visual_block_inner">
+                                      <span class="label">Оплата картой</span>
+                                    </div>
+                                  </div>
+                                </label>
+                              </div>
+                            </div>
+                            <div class="d-col">
+                              <div class="checkbox">
+                                <label class="col-form-label payment input-parent" style="display: flex;">
+                                  <input type="radio" name="payment" value="4" id="payment_4">
+                                  <div class="visual_block">
+                                    <div class="visual_block_inner">
+                                      <span class="label">По счету</span>
+                                    </div>
+                                  </div>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form_block">
+                      <div class="form_block_title inliner vam">
+                        <span class="number">2</span>
+                        <span class="title">Адрес доставки и получатель</span>
+                      </div>
+                      <div class="form_block_content">
+                        <div class="sub_block">
+                          <span class="subblock_title">Получатель</span>
+                          <div class="sl-row">
+                            <div class="d-col-12">
+                              <div class="form_input_group input_pl required">
+                                <input type="text" id="receiver" placeholder="Получатель" name="receiver" value=""
+                                  class="base_input required">
+                                <label for="receiver" class="s-complex-input__label">Получатель</label>
+                              </div>
+                            </div>
+                            <div class="d-col-12 d-col-md-6">
+                              <div class="form_input_group input_pl required">
+                                <input type="text" id="email" placeholder="Email" name="email" value=""
+                                  class="base_input required">
+                                <label for="email" class="s-complex-input__label">Email</label>
+                              </div>
+                            </div>
+                            <div class="d-col-12 d-col-md-6">
+                              <div class="form_input_group input_pl">
+                                <input type="text" id="phone" placeholder="Телефон" name="phone" value=""
+                                  class="base_input">
+                                <label for="phone" class="s-complex-input__label">Телефон</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sub_block">
+                          <span class="subblock_title">Адрес доставки</span>
+                          <div class="sl-row">
+                            <div class="d-col-12 d-col-md-4">
+                              <div class="form_input_group input_pl">
+                                <input type="text" id="index" placeholder="Почтовый индекс" name="index" value=""
+                                  class="base_input">
+                                <label for="index" class="s-complex-input__label">Почтовый индекс</label>
+                              </div>
+                            </div>
+                            <div class="d-col-12 d-col-md-8">
+                              <div class="form_input_group input_pl">
+                                <input type="text" id="region" placeholder="Область" name="region" value=""
+                                  class="base_input">
+                                <label for="region" class="s-complex-input__label">Область</label>
+                              </div>
+                            </div>
+                            <div class="d-col-12">
+                              <div class="form_input_group input_pl">
+                                <input type="text" id="city" placeholder="Город" name="city" value=""
+                                  class="base_input">
+                                <label for="city" class="s-complex-input__label">Город</label>
+                              </div>
+                            </div>
+                            <div class="d-col-12 d-col-md-6">
+                              <div class="form_input_group input_pl">
+                                <input type="text" id="street" placeholder="Улица" name="street" value=""
+                                  class="base_input">
+                                <label for="street" class="s-complex-input__label">Улица</label>
+                              </div>
+                            </div>
+                            <div class="d-col-6 d-col-md-3">
+                              <div class="form_input_group input_pl">
+                                <input type="text" id="building" placeholder="Дом" name="building" value=""
+                                  class="base_input">
+                                <label for="building" class="s-complex-input__label">Дом</label>
+                              </div>
+                            </div>
+                            <div class="d-col-6 d-col-md-3">
+                              <div class="form_input_group input_pl">
+                                <input type="text" id="room" placeholder="Кв./Офис" name="room" value=""
+                                  class="base_input">
+                                <label for="room" class="s-complex-input__label">Кв./Офис</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sub_block">
+                          <span class="subblock_title">Комментарий</span>
+                          <div class="form-group input-parent">
+                            <textarea name="comment" id="comment" class="base_input"
+                              placeholder="Комментарий"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button type="submit" name="ms2_action" value="order/submit"
+                      class="btn btn-primary ms2_link hidden">
+                      Сделать заказ! </button>
+                  </form>
+                </div>
+
+              </div>
+              <div class="d-col-lg-4">
+                <div class="summary_block">
+                  <div class="summary_title_block">
+                    <span class="summary_title">Итого</span>
+                  </div>
+                  <div class="summary_promocode">
+                    <div class="mspc_form">
+                      <div class="form-group sl-row">
+                        <div class="d-col-12">
+                          <div class="sl-input-group">
+                            <input type="text" class="mspc_field base_input" value=""
+                              placeholder="Укажите промо-код">
+                            <div class="sl-input-group-append">
+                              <button class="mspc_btn sl-btn sl-btn-outline-secondary" type="submit"><i
+                                  class="fa fa-check"></i></button>
+                            </div>
+                          </div>
+                          <div class="mspc_msg"></div>
+                        </div>
+                      </div>
+                      <ul class="summary-summation">
+                        <li class="mspc_discount_amount" style="display: none;">
+                          <div class="summary-summation__term ">Скидка</div>
+                          <div class="summary-summation__data ">0&thinsp;₽</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <ul class="summary-summation">
+                    <li>
+                      <div class="summary-summation__term ">Товары</div>
+                      <div class="summary-summation__data "><span class="ms2_total_cost">73 924</span>&thinsp;₽</div>
+                    </li>
+                    <li>
+                      <div class="summary-summation__total"><span class="ms2_total_cost">73 924</span>&thinsp;₽</div>
+                    </li>
+                  </ul>
+                  <div class="text-center">
+                    <button class="sl-btn sl-btn-primary pseudo_submit">
+                      <span class="tm">Оформить заказ</span>
+                    </button>
+                    <div class="">
+                      <button type="button" data-toggle="modal" data-target="#callback" class="sl-btn sl-btn-text texter"> <i
+                          class="fa fa-phone"></i> Оформить по телефону</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="sl_footer">
+	
+</footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<!-- <script src="libs/bootstrap4/js/bootstrap.min.js"></script> -->
+<script src="libs/owlcarousel2/dist/owl.carousel.min.js"></script>
+<script src="libs/match-height/dist/jquery.matchHeight-min.js"></script>
+<script src="libs/fancybox/dist/jquery.fancybox.min.js"></script>
+<script src="js/main.js?time=5"></script>
+</body>
+
+</html>
