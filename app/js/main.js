@@ -3,8 +3,8 @@ $(document).ready(function(){
     $('.sl-quantity button.btn-count').click(function(e){
         e.preventDefault();
         var elem = $(this).closest('.sl-quantity').find('input.counter');
-        var krat = $(this).parent('.sl-quantity').find('input.counter').data('krat');
-        var min = $(this).parent('.sl-quantity').find('input.counter').data('min');
+        var krat = $(this).closest('.sl-quantity').find('input.counter').data('krat');
+        var min = $(this).closest('.sl-quantity').find('input.counter').data('min');
         var currentQty= elem.val();
 
         if( $(this).hasClass('minus') && currentQty>min){
