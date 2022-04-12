@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('./includes/meta.html')
+</head>
+
+<body>
+    <div class="sl_wrapper">
+        @@include('./includes/header.html')
+        <main class="sl_main">
+            @@include('./includes/breadcrumbs.html')
+            <section class="sl-def-section">
+                <div class="sl-base_wrapper">
+                    <h1>Личный кабинет</h1>
+                    <div class="sl-row">
+                        <div class="d-col-md-3">
+                            <div class="sl_side_menu">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="sl_icon sl_icon-orders"></i>
+                                            <span>Список заказов</span>
+                                        </a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="#">
+                                            <i class="sl_icon sl_icon-cog"></i>
+                                            <span>Настройки</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="d-col-md-9">
+                            <div class="sl-profile sl_auth">
+                                <div class="sl-form-group">
+                                    <span class="sl-title">Ваш аккаунт</span>
+                                    <div class="sl-row">
+                                        <div class="d-col-md-6">
+                                            <div class="form_input_group">
+                                                <label for="profile_email">E-mail</label>
+                                                <input type="text" id="profile_email" placeholder="site@site.ru"
+                                                    name="email" value="" class="required">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sl-form-group">
+                                    <span class="sl-title">Ваши данные</span>
+                                    <div class="sl-row">
+                                        <div class="d-col-md-6">
+                                            <div class="form_input_group">
+                                                <label for="profile_fullname">Имя</label>
+                                                <input type="text" id="profile_fullname"
+                                                    placeholder="Иванов Иван Иванович" name="fullname" value=""
+                                                    class="required">
+                                            </div>
+                                        </div>
+                                        <div class="d-col-md-6">
+                                            <div class="form_input_group">
+                                                <label for="profile_phone">Телефон</label>
+                                                <input type="text" id="profile_phone" placeholder="" name="phone"
+                                                    value="" class="required phone">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_input_group">
+                                    <button class="sl-btn sl-btn-primary" type="submit">Сохранить</button>
+                                    <button class="sl-btn sl-btn-danger" type="button">Выйти →</button>
+                                </div>
+                            </div>
+                            <div class="sl-profile mt-3">
+                                <div class="stores">
+                                    <div class="store">
+                                        <span class="store_title">Тестовый магазин</span>
+                                        <div class="data">
+                                            <div class="sl-row align-items-end">
+                                                <div class="d-col-md-6">
+                                                    <div class="sl-form-group">
+                                                        <label for="apikey_s_1" class="form-label">Ключ API</label>
+                                                        <input class="form-control" type="text" name="apikey"
+                                                            id="apikey_s_1" value="sl-WAlBhdkuMG" readonly="">
+                                                    </div>
+                                                </div>
+                                                <div class="d-col-md-6">
+                                                    <div class="sl-form-group">
+                                                        <button class="sl-btn sl-btn-primary regerate_apikey"
+                                                            data-id="1" data-type="slStores">
+                                                            <i class="fa fa-magic"></i>
+                                                            <span>Перегенерировать</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="warehouses">
+                                    <div class="warehouse">
+                                        <span class="warehouse_title">Тестовый склад</span>
+                                        <div class="data">
+                                            <div class="sl-row align-items-end">
+                                                <div class="d-col-md-6">
+                                                    <div class="sl-form-group">
+                                                        <label for="apikey_w_1" class="form-label">Ключ API</label>
+                                                        <input class="form-control" type="text" name="apikey"
+                                                            id="apikey_w_1" value="sl-BTzMbB" readonly="">
+                                                    </div>
+                                                </div>
+                                                <div class="d-col-md-6">
+                                                    <div class="sl-form-group">
+                                                        <button class="sl-btn sl-btn-primary regerate_apikey"
+                                                            data-id="1" data-type="slWarehouse">
+                                                            <i class="fa fa-magic"></i>
+                                                            <span>Перегенерировать</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('./includes/footer.html')
+    </div>
+    @@include('./includes/scripts.html')
+</body>
+
+</html>

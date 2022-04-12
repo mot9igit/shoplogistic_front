@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  @@include('./includes/meta.html')
+</head>
+
+<body>
+  <div class="sl_wrapper">
+    @@include('./includes/header.html')
+    <main class="sl_main">
+      @@include('./includes/breadcrumbs.html')
+      <section class="sl-def-section content withovh">
+        <div class="sl-base_wrapper">
+          <h2>Верстка сайта</h2>
+          <div class="sl-alert sl-alert-info">Чтобы посмотреть как будет выглядеть сайт, переходите по ссылкам ниже. Каждая страница откроется в новой вкладке.</div>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a href="/main.html" target="_blank">Главная страница</a>
+            </li>
+            
+            <li class="list-group-item">
+              <a href="/text.html" target="_blank">Текстовая страница</a>
+            </li>
+            <li class="list-group-item">
+              <a href="/cart.html" target="_blank">Корзина</a>
+            </li>
+            <li class="list-group-item">
+                <a href="/orders.html" target="_blank">История заказов</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    @@include('./includes/footer.html')
+  </div>
+  @@include('./includes/scripts.html')
+</body>
+
+</html>

@@ -1,3 +1,158 @@
 <footer class="sl_footer">
-	
+	<div class="sl-base_wrapper">
+        <div class="sl-row">
+            <div class="d-col-lg-4 order-mobile-3">
+                <a href="tel:+73512170617" class="sl_phone">+7 351 217-06-17</a>
+                <span class="sl_desc">456313, РФ, Челябинская область, <br/>г. Миасс, Тургоякское шоссе, 9/17</span>
+                <ul class="sl_socials">
+                    <li>
+                        <a href="#">
+                            <span class="sl_icon sl_icon-vk"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="sl_icon sl_icon-youtube"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="sl_icon sl_icon-instagram"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-col-lg-6">
+                <a href="#" class="sl_title">Каталог товаров</a>
+                <div class="sl_catalog">
+                    <div class="sl-row">
+                        <div class="d-col-6">
+                            <ul>
+                                <li><a href="#">Измельчители зерна</a></li>
+                                <li><a href="#">Доильные агрегаты</a></li>
+                                <li><a href="#">Измельчители корма</a></li>
+                                <li><a href="#">Домашние кормоцеха универсальные</a></li>
+                                <li><a href="#">Агрегаты плющения зерна</a></li>
+                                <li><a href="#">Маслобойки, электросепараторы</a></li>
+                            </ul>
+                        </div>
+                        <div class="d-col-6">
+                            <ul>
+                                <li><a href="#">Товары для птицы</a></li>
+                                <li><a href="#">Товары для дома</a></li>
+                                <li><a href="#">Товары для сада</a></li>
+                                <li><a href="#">Товары для отдыха</a></li>
+                                <li><a href="#">Товары для рыбалки</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-col-lg-2">
+                <div class="sl_b_catalog">                    
+                    <ul>
+                        <li><a href="#" class="sl_title">Каталог запчастей</a></li>
+                        <li><a href="#" class="sl_title">Оплата и доставка</a></li>
+                        <li><a href="#" class="sl_title">Акции</a></li>
+                        <li><a href="#" class="sl_title">Гарантия</a></li>
+                        <li><a href="#" class="sl_title">Новости</a></li>
+                        <li><a href="#" class="sl_title">Полезные материалы</a></li>
+                    </ul>                       
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
+
+<!-- MODALS -->
+<div class="modal fade" id="auth" tabindex="-1" aria-labelledby="auth" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="auth">Авторизация</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="#" class="sl_auth">
+                <div class="form_input_group">
+                    <label for="auth_login">Логин или email</label>
+                    <input type="text" id="auth_login" placeholder="Логин" name="login" value="" class="required">                    
+                </div>
+                <div class="form_input_group">
+                    <label for="auth_password">Пароль</label>
+                    <input type="text" id="auth_password" placeholder="Пароль" name="password" value="" class="required">                   
+                    <div class="desc">
+                        <a href="#">Забыли пароль?</a>
+                    </div>
+                </div>
+                <div class="form_input_group text-center">
+                    <a href="#" class="sl-btn sl-btn-primary-b" data-bs-toggle="modal" data-bs-target="#register">Регистрация</a>
+                    <button class="sl-btn sl-btn-primary">
+                        <span class="tm">Войти</span>
+                    </button>
+                </div>
+                <div class="socials text-center">
+                    <ul class="sl_socials">
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/google.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/yandex.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/vk_auth.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="register" tabindex="-1" aria-labelledby="register" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="register">Регистрация</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="#" class="sl_auth">
+                <div class="form_input_group">
+                    <label for="register_email">Email</label>
+                    <input type="text" id="register_email" placeholder="Email" name="email" value="" class="required">                    
+                </div>
+                <div class="form_input_group">
+                    <label for="register_phone">Телефон</label>
+                    <input type="text" id="register_phone" placeholder="Телефон" name="phone" value="" class="required">                    
+                </div>
+                <div class="form_input_group">
+                    <label for="register_fullname">Имя</label>
+                    <input type="text" id="register_fullname" placeholder="Имя" name="fullname" value="" class="required">                    
+                </div>
+                <div class="form_input_group">
+                    <label for="register_login">Логин</label>
+                    <input type="text" id="register_login" placeholder="Логин" name="login" value="" class="required">                    
+                </div>
+                <div class="form_input_group">
+                    <label for="register_password">Пароль</label>
+                    <input type="text" id="register_password" placeholder="Пароль" name="password" value="" class="required">
+                </div>
+                <div class="form_input_group text-center">
+                    <a href="#" class="sl-btn sl-btn-primary-b" data-bs-toggle="modal" data-bs-target="#auth">Войти</a>
+                    <button class="sl-btn sl-btn-primary">
+                        <span class="tm">Регистрация</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- / MODALS -->

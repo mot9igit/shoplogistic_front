@@ -1,9 +1,20 @@
 html,
 body {
-	height: 100%;
+	min-height: 100% !important;
+	height: auto !important;
 	background: #f4f7f9;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
+}
+
+.sl_wrapper{
+	display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.sl_noscroll{
+	overflow: hidden;
 }
 
 .sl_container{
@@ -12,14 +23,23 @@ body {
 
 .sl-base_wrapper {
 	max-width: 1300px;
+	width: 100%;
 	margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
 }
 
+.sl_header {
+	flex: 0 0 auto;
+	position: relative;
+	z-index: 2;
+}
+
 .sl_main {
 	flex: 1 0 auto;
+	position: relative;
+	z-index: 1;
 }
 
 .sl_footer {
@@ -27,10 +47,44 @@ body {
 }
 
 a{
-	text-decoration: underline;
+	color: #333;
+	text-decoration: none;
+	transition: all .2s ease;
 	&:hover{
-		text-decoration: none;
+		color: #333;
+		text-decoration: underline;
+		transition: all .2s ease;
 	}
+}
+
+h1, .h1{
+	display: block;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 37px;
+	color: #00061A;
+	margin-bottom: 22px;
+}
+
+h3, .h3{
+	display: block;
+	font-style: normal;
+	font-size: 28px;
+	font-weight: 500;
+	margin-top: 40px;
+	margin-bottom: 16px;
+	text-align: center;
+	color: #75787b;
+}
+
+h4, .h4{
+	display: block;
+	font-style: normal;
+	font-size: 24px;
+	font-weight: 400;
+	color: #75787b;
+	margin-bottom: 8px;	
 }
 
 .fa-phone:before {
@@ -42,6 +96,32 @@ a{
     transform: rotate(90deg);
 }
 
+.inliner {
+	display: block;
+	font-size: 0; 
+	& > * {
+		display: inline-block;
+		float: none; 
+	}
+	&.vam > * {
+		vertical-align: middle; 
+	}
+}
+	
+.sl-form-group{
+	margin-bottom: 15px;
+	.sl-title{
+		display: block;
+		padding-bottom: 25px;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 22px;
+		color: #00061A;
+	}
+}
+	
+
 /* ----------------- UTILS ------------- */
 @for $i from 1 to 5 {
 	.mb-#{$i}{
@@ -49,16 +129,40 @@ a{
 	}
 }
 
+.mobile-show{
+	display: none;
+}
+
+.desktop-show{
+	display: block;
+}
+
+@media (max-width: $tablets){
+	.mobile-show{
+		display: block !important;
+	}
+	
+	.desktop-show{
+		display: none;
+	}
+}
 
 /* ----------------- TXT ---------------- */
 .hidden{
 	display: none;
 }
 
+.text-center{
+	text-align: center;
+}
+
 .text-right{
 	text-align: right;
 }
 
+p{
+	margin-bottom: 15px;
+}
 
 /* ----------------- LAYOUT ------------- */
 .sl-row {

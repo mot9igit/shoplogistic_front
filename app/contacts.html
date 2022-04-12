@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffffff">
+<title>Shoplogistic</title>
+<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="libs/owlcarousel2/dist/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="libs/fontawesome5/css/all.min.css">
+<link rel="stylesheet" href="libs/fontawesome5/css/v4-shims.min.css">
+<link rel="stylesheet" href="libs/fancybox/dist/jquery.fancybox.min.css">
+<link rel="stylesheet" href="libs/icofont.css">
+<link rel="stylesheet" href="css/style.css?id=90">
+</head>
+
+<body>
+    <div class="sl_wrapper">
+        <header class="sl_header">
+    <div class="sl_header-top">
+        <div class="sl-base_wrapper">
+            <div class="sl_top-info">
+                <div class="sl-item">
+                    <i class="sl_icon sl_icon-map-marker"></i>
+                    <span>г. Миасс</span>
+                </div>
+                <div class="sl-item">
+                    <i class="sl_icon sl_icon-phone"></i>
+                    <a href="tel:+73512170617">+7 351 217-06-17</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sl_header-bottom">
+        <div class="sl-base_wrapper">
+            <div class="sl-row sl-align-items-center">
+                <div class="d-col-md-2">
+                    <div class="sl_logo">
+                        <a href="#">
+                            <img src="img/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="d-col-md-10">
+                    <div class="sl_navigation">
+                        <ul>
+                            <li>
+                                <a href="#">Каталог товаров</a>
+                                <ul>
+                                    <li><a href="#">Измельчители зерна</a></li>
+                                    <li><a href="#">Доильные агрегаты</a></li>
+                                    <li><a href="#">Измельчители корма</a></li>
+                                    <li><a href="#">Домашние кормоцеха универсальные</a></li>
+                                    <li><a href="#">Агрегаты плющения зерна</a></li>
+                                    <li><a href="#">Маслобойки, электросепараторы</a></li>
+                                    <li><a href="#">Товары для птицы</a></li>
+                                    <li><a href="#">Товары для дома</a></li>
+                                    <li><a href="#">Товары для сада</a></li>
+                                    <li><a href="#">Товары для отдыха</a></li>
+                                    <li><a href="#">Товары для рыбалки</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Каталог запчастей</a>
+                            </li>
+                            <li>
+                                <a href="#">Оплата и доставка</a>
+                            </li>
+                            <li>
+                                <a href="#">Акции</a>
+                            </li>
+                            <li>
+                                <a href="#">Гарантия</a>
+                            </li>
+                            <li>
+                                <a href="#">Журнал</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                            <li>
+                                <div id="msMiniCart" class="sl_minicart ">
+                                    <div class="empty">
+                                        <a href="#">
+                                            <i class="sl_icon sl_icon-cart"></i>
+                                            <span class="sl_minicart-count ms2_total_count">0</span>
+                                        </a>
+                                    </div>
+                                    <div class="not_empty">
+                                        <a href="#">
+                                            <i class="sl_icon sl_icon-cart"></i>
+                                            <span class="sl_minicart-count ms2_total_count">0</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#auth">
+                                    <i class="sl_icon sl_icon-user"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>           
+        </div>   
+    </div>
+    <div class="sl_header-mobile">
+        <div class="sl-base_wrapper">
+            <div class="sl-row sl-align-items-center">
+                <div class="d-col-sm-1 d-col-2">
+                    <a href="#" class="sl_burger sl_noactive">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+                <div class="d-col-sm-4 d-col-4">
+                    <div class="sl_logo">
+                        <a href="#">
+                            <img src="img/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="d-col-sm-7 d-col-6">
+                    <div class="sl_apps">
+                        <div id="msMiniCart" class="sl_minicart ">
+                            <div class="empty">
+                                <a href="#">
+                                    <i class="sl_icon sl_icon-cart"></i>
+                                    <span class="sl_minicart-count ms2_total_count">0</span>
+                                </a>
+                            </div>
+                            <div class="not_empty">
+                                <a href="#">
+                                    <i class="sl_icon sl_icon-cart"></i>
+                                    <span class="sl_minicart-count ms2_total_count">0</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="sl_profile">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#auth">
+                                <i class="sl_icon sl_icon-user"></i>
+                            </a>
+                        </div>
+                    </div>                   
+                </div>
+            </div>
+            <div class="sl_mobile-menu">
+                <ul class="sl_m-menu">
+                    <li>
+                        <a href="#">Каталог товаров</a>
+                    </li>
+                    <li>
+                        <a href="#">Каталог запчастей</a>
+                    </li>
+                    <li>
+                        <a href="#">Оплата и доставка</a>
+                    </li>
+                    <li>
+                        <a href="#">Акции</a>
+                    </li>
+                    <li>
+                        <a href="#">Гарантия</a>
+                    </li>
+                    <li>
+                        <a href="#">Журнал</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+                <div class="sl_mobile-contacts">
+                    <a href="tel:+73512170617" class="sl_phone">+7 351 217-06-17</a>
+                    <span class="sl_desc">6:00 - 15:00 (МСК)</span>
+                    <span class="sl_desc">456313, РФ, Челябинская область, <br/>г. Миасс, Тургоякское шоссе, 9/17</span>
+                    <ul class="sl_socials">
+                        <li>
+                            <a href="#">
+                                <span class="sl_icon sl_icon-vk"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="sl_icon sl_icon-youtube"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="sl_icon sl_icon-instagram"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <main class="sl_main">
+            <div class="breadcrumbs ">
+    <div class="sl-base_wrapper">
+      <nav aria-label="breadcrumb">
+            <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a href="/" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1">
+                </li>
+                <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a href="dostavka.html" itemprop="item"><span itemprop="name">Доставка</span></a><meta itemprop="position" content="2">
+                </li>
+            </ol>	
+        </nav>
+    </div>
+</div>
+            <section class="sl-def-section content withovh">
+                <div class="sl-base_wrapper">
+                    <div class="contentPage">
+                        <!--Начало отдела-->
+
+
+                        <h2 class="h2">Отдел продаж</h2>
+                        <div class="contactWrapper">
+
+                            <!--Начало карточки-->
+                            <div class="contactCard">
+                                <img src="img/contactPhoto/funtusova.png" class="contactCard__img">
+                                <div class="contactInfo">
+                                    <p class="contactInfo__name">Фунтусова Ирина Владимировна</p>
+                                    <p class="contactInfo__position">начальник группы продаж</p>
+                                    <a href="tel:+7 (351) 217‒06‒14" class="contactInfo__phone">+7 (351) 217‒06‒17</a>
+                                    <a href="mailto:sbit@fermer-usm.ru" class="contactInfo__mail">sbit@fermer-usm.ru</a>
+
+                                </div>
+                            </div>
+                            <!--Конец карточки-->
+
+                            <!--Начало карточки-->
+                            <div class="contactCard">
+                                <img src="img/contactPhoto/amirov2.png" class="contactCard__img">
+                                <div class="contactInfo">
+                                    <p class="contactInfo__name">Амиров Руслан Рахметович</p>
+                                    <p class="contactInfo__position">региональный менеджер</p>
+                                    <a href="tel:+7 (351) 217‒06‒14" class="contactInfo__phone">+7 (351) 217‒06‒14</a>
+                                    <a href="mailto:amirov@fermer-usm.ru"
+                                        class="contactInfo__mail">amirov@fermer-usm.ru</a>
+
+                                </div>
+                            </div>
+                            <!--Конец карточки-->
+
+                            <!--Начало карточки-->
+                            <div class="contactCard">
+                                <img src="img/contactPhoto/volkova.png" class="contactCard__img">
+                                <div class="contactInfo">
+                                    <p class="contactInfo__name">Волкова Екатерина Викторовна</p>
+                                    <p class="contactInfo__position">менеджер розничных продаж</p>
+                                    <a href="tel:+7 (351) 217‒06‒14" class="contactInfo__phone">+7 (351) 217‒06‒17</a>
+                                    <a href="mailto:tk@fermer-usm.ru" class="contactInfo__mail">tk@fermer-usm.ru</a>
+
+                                </div>
+                            </div>
+                            <!--Конец карточки-->
+
+
+
+
+                            <!--Начало карточки-->
+                            <div class="contactCard">
+                                <img src="img/contactPhoto/terzeman.png" class="contactCard__img">
+                                <div class="contactInfo">
+                                    <p class="contactInfo__name">Терземан Олеся Владимировна</p>
+                                    <p class="contactInfo__position">менеджер оптовых продаж</p>
+                                    <a href="tel:+7 (351) 217‒06‒14" class="contactInfo__phone">+7 (351) 217‒06‒14</a>
+                                    <a href="mailto:manager@fermer-usm.ru"
+                                        class="contactInfo__mail">manager@fermer-usm.ru</a>
+
+                                </div>
+                            </div>
+                            <!--Конец карточки-->
+
+
+                        </div>
+                        <!--Конец отдела-->
+                        <!--Начало карточки-->
+                        <div class="contactCard">
+                            <img src="img/contactPhoto/suhanova.png" class="contactCard__img">
+                            <div class="contactInfo">
+                                <p class="contactInfo__name">Суханова Елена Сергеевна</p>
+                                <p class="contactInfo__position">менеджер оптовых продаж</p>
+                                <a href="tel:+7 (351) 217‒06‒14" class="contactInfo__phone">+7 (351) 217‒06‒14</a>
+                                <a href="mailto:sale@fermer-usm.ru" class="contactInfo__mail">sale@fermer-usm.ru</a>
+
+                            </div>
+                        </div>
+                        <!--Конец карточки-->
+
+                        <!--Начало отдела-->
+
+
+                        <h2 class="h2">Бухгалтерия</h2>
+                        <div class="contactWrapper">
+
+
+
+                            <!--Начало карточки-->
+                            <div class="contactCard">
+                                <img src="img/contactPhoto/gmaeva.png" class="contactCard__img">
+                                <div class="contactInfo">
+                                    <p class="contactInfo__name">Жмаева Марина Павловна</p>
+                                    <p class="contactInfo__position">главный бухгалтер</p>
+                                    <a href="tel:+7 (3513) 54‒36‒35" class="contactInfo__phone">+7 (3513) 54‒36‒35</a>
+                                    <a href="mailto:glavbuh@fermer-usm.ru"
+                                        class="contactInfo__mail">glavbuh@fermer-usm.ru</a>
+
+                                </div>
+                            </div>
+                            <!--Конец карточки-->
+
+                        </div>
+                        <!--Конец отдела-->
+
+                        <!--Начало отдела-->
+
+
+                        <h2 class="h2">Гарантия и сервис</h2>
+                        <div class="contactWrapper">
+
+                            <!--Начало карточки-->
+                            <div class="contactCard">
+                                <img src="img/contactPhoto/bannikova.png" class="contactCard__img">
+                                <div class="contactInfo">
+                                    <p class="contactInfo__name">Банникова Регина Азатовна</p>
+                                    <p class="contactInfo__position">инженер сервисной службы</p>
+                                    <a href="tel:+7 (351) 217‒06‒14" class="contactInfo__phone">+7 922 637‒76‒18</a>
+                                    <a href="mailto:522307@mail.ru" class="contactInfo__mail">522307@mail.ru</a>
+
+                                </div>
+                            </div>
+                            <!--Конец карточки-->
+
+
+                        </div>
+                        <!--Конец отдела-->
+
+
+                        <!--Начало отдела-->
+
+                        <h2 class="h2">Конструкторско-технологическая служба</h2>
+                        <div class="contactWrapper">
+
+                            <!--Начало карточки-->
+                            <div class="contactCard">
+                                <img src="img/contactPhoto/leushkin.png" class="contactCard__img">
+                                <div class="contactInfo">
+                                    <p class="contactInfo__name">Лёушкин Евгений Александрович</p>
+                                    <p class="contactInfo__position">начальник КТС</p>
+                                    <a href="tel:+7 (922)637-76-28" class="contactInfo__phone">+7 (922)637-76-28</a>
+                                    <a href="mailto:580216@mail.ru" class="contactInfo__mail">580216@mail.ru</a>
+
+                                </div>
+                            </div>
+                            <!--Конец карточки-->
+
+
+
+
+                        </div>
+                        <!--Конец отдела-->
+
+
+                        <!--Начало отдела-->
+
+
+                        <h2 class="h2">Отдел ОМТС</h2>
+                        <div class="contactWrapper">
+
+
+
+                            <!--Начало карточки-->
+                            <div class="contactCard">
+                                <img src="img/contactPhoto/pidina.png" class="contactCard__img">
+                                <div class="contactInfo">
+                                    <p class="contactInfo__name">Пидина Наталья Анатольевна</p>
+                                    <p class="contactInfo__position">начальник отдела МТС</p>
+                                    <a href="tel:+7 (351) 217‒06‒14" class="contactInfo__phone">+7 (3513) 54-36-25</a>
+                                    <a href="mailto:vlad@htmlbook.ru" class="contactInfo__mail">snab@fermer-usm.ru</a>
+
+                                </div>
+                            </div>
+                            <!--Конец карточки-->
+
+                            <!--Начало карточки					
+                        <div class="contactCard">
+                            <img src="img/contactPhoto/dunaev.png" class="contactCard__img">
+                            <div class="contactInfo">
+                                <p class="contactInfo__name">Дунаев Егор Валерьевич</p>
+                                <p class="contactInfo__position">экономист по МТС</p>
+                                <a href="mailto:evdunaev@fermer-usm.ru" class="contactInfo__mail">evdunaev@fermer-usm.ru</a>
+    
+                            </div>
+                        </div>
+                        Конец карточки-->
+                            <!--Начало карточки-->
+                            <div class="contactCard">
+                                <img src="img/contactPhoto/olekseenko.png" class="contactCard__img">
+                                <div class="contactInfo">
+                                    <p class="contactInfo__name">Олексеенко Зинаида Вячеславовна</p>
+                                    <p class="contactInfo__position">экономист по МТС</p>
+                                    <a href="mailto:olekseenko.zinaida@bk.ru"
+                                        class="contactInfo__mail">olekseenko.zinaida@bk.ru</a>
+
+                                </div>
+                            </div>
+                            <!--Конец карточки-->
+
+                        </div>
+                        <!--Конец отдела-->
+
+                        <!--Начало отдела-->
+
+
+                        <h2 class="h2">Отдел маркетинга</h2>
+                        <div class="contactWrapper">
+
+                            <!--Начало карточки-->
+                            <div class="contactCard">
+                                <img src="img/contactPhoto/zavolskaya.png" class="contactCard__img">
+                                <div class="contactInfo">
+                                    <p class="contactInfo__name">Завольская Ксения Викторовна</p>
+                                    <p class="contactInfo__position">начальник отдела маркетинга</p>
+                                    <a href="tel:+7 (351) 217‒06‒14" class="contactInfo__phone">+7 (351) 217‒06‒17</a>
+                                    <a href="mailto:marketing@fermer-usm.ru"
+                                        class="contactInfo__mail">marketing@fermer-usm.ru</a>
+
+                                </div>
+                            </div>
+                            <!--Конец карточки-->
+
+                            <!--Начало карточки-->
+                            <div class="contactCard">
+                                <img src="img/contactPhoto/polyashova.png" class="contactCard__img">
+                                <div class="contactInfo">
+                                    <p class="contactInfo__name">Поляшова Милена Вячеславовна</p>
+                                    <p class="contactInfo__position">дизайнер</p>
+                                    <a href="tel:+7 (351) 217‒06‒14" class="contactInfo__phone">+7 (351) 217‒06‒17</a>
+                                    <a href="mailto:marketing@fermer-usm.ru"
+                                        class="contactInfo__mail">marketing@fermer-usm.ru</a>
+
+                                </div>
+                            </div>
+                            <!--Конец карточки-->
+                            <!--Начало карточки-->
+                            <div class="contactCard">
+                                <img src="img/contactPhoto/ivanova.png" class="contactCard__img">
+                                <div class="contactInfo">
+                                    <p class="contactInfo__name">Иванова Вера Александровна</p>
+                                    <p class="contactInfo__position">менеджер по рекламе</p>
+                                    <a href="tel:+7 (351) 217‒06‒14" class="contactInfo__phone">+7 (351) 217‒06‒17</a>
+                                    <a href="mailto:marketing@fermer-usm.ru"
+                                        class="contactInfo__mail">marketing@fermer-usm.ru</a>
+
+                                </div>
+                            </div>
+                            <!--Конец карточки-->
+
+
+
+                        </div>
+                        <!--Конец отдела-->
+
+                        <!--Начало отдела-->
+
+
+                        <h2 class="h2">Администрация</h2>
+                        <div class="contactWrapper">
+
+                            <!--Начало карточки
+                        <div class="contactCard">
+                            <img src="img/contactPhoto/bersenev.png" class="contactCard__img">
+                            <div class="contactInfo">
+                                <p class="contactInfo__name">Берсенёв Андрей Юрьевич</p>
+                                <p class="contactInfo__position">исполнительный директор</p>
+    
+                            </div>
+                        </div>
+                        Конец карточки-->
+                            <div class="contactCard">
+                                <img src="img/contactPhoto/igor-bersenev.png" class="contactCard__img">
+                                <div class="contactInfo">
+                                    <p class="contactInfo__name">Берсенёв Игорь Андреевич</p>
+                                    <p class="contactInfo__position">директор</p>
+                                </div>
+                            </div>
+                            <!--Конец карточки-->
+
+                            <!--Начало карточки-->
+                            <div class="contactCard">
+                                <img src="img/contactPhoto/kuzmenko.png" class="contactCard__img">
+                                <div class="contactInfo">
+                                    <p class="contactInfo__name">Кузьменко Виталий Васильевич</p>
+                                    <p class="contactInfo__position">первый заместитель директора</p>
+
+                                </div>
+                            </div>
+                            <!--Конец карточки-->
+
+                            <!--Начало карточки-->
+                            <div class="contactCard">
+                                <img src="img/contactPhoto/luzyna.png" class="contactCard__img">
+                                <div class="contactInfo">
+                                    <p class="contactInfo__name">Лузина Виктория Вячеславовна</p>
+                                    <p class="contactInfo__position">отдел кадров</p>
+                                    <a href="tel:+7 (351) 217‒06‒14" class="contactInfo__phone">+7 (3513) 54‒36‒24
+                                        (факс)</a>
+                                    <a href="mailto:usm@miass.ru" class="contactInfo__mail">usm@miass.ru</a>
+
+                                </div>
+                            </div>
+                            <!--Конец карточки-->
+
+                            <!--Начало карточки-->
+                            <div class="contactCard">
+                                <img src="img/contactPhoto/korynevsky.png" class="contactCard__img">
+                                <div class="contactInfo">
+                                    <p class="contactInfo__name">Кориневский Андрей Евгеньевич</p>
+                                    <p class="contactInfo__position">заместитель директора по коммерции</p>
+                                    <a href="tel:+7 (351) 217‒06‒14" class="contactInfo__phone">+7 905 837‒78‒20 </a>
+                                    <a href="mailto:cco@fermer-usm.ru" class="contactInfo__mail">cco@fermer-usm.ru</a>
+
+                                </div>
+                            </div>
+                            <!--Конец карточки-->
+
+
+
+                        </div>
+                        <!--Конец отдела-->
+                        <h2 class="h2">Адрес</h2>
+                        <p class="contactText">Адрес завода: 456313, РФ, Челябинская область, г. Миасс, Тургоякское
+                            шоссе, 9/12, а/я 686</p>
+
+
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="sl_footer">
+	<div class="sl-base_wrapper">
+        <div class="sl-row">
+            <div class="d-col-lg-4 order-mobile-3">
+                <a href="tel:+73512170617" class="sl_phone">+7 351 217-06-17</a>
+                <span class="sl_desc">456313, РФ, Челябинская область, <br/>г. Миасс, Тургоякское шоссе, 9/17</span>
+                <ul class="sl_socials">
+                    <li>
+                        <a href="#">
+                            <span class="sl_icon sl_icon-vk"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="sl_icon sl_icon-youtube"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="sl_icon sl_icon-instagram"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-col-lg-6">
+                <a href="#" class="sl_title">Каталог товаров</a>
+                <div class="sl_catalog">
+                    <div class="sl-row">
+                        <div class="d-col-6">
+                            <ul>
+                                <li><a href="#">Измельчители зерна</a></li>
+                                <li><a href="#">Доильные агрегаты</a></li>
+                                <li><a href="#">Измельчители корма</a></li>
+                                <li><a href="#">Домашние кормоцеха универсальные</a></li>
+                                <li><a href="#">Агрегаты плющения зерна</a></li>
+                                <li><a href="#">Маслобойки, электросепараторы</a></li>
+                            </ul>
+                        </div>
+                        <div class="d-col-6">
+                            <ul>
+                                <li><a href="#">Товары для птицы</a></li>
+                                <li><a href="#">Товары для дома</a></li>
+                                <li><a href="#">Товары для сада</a></li>
+                                <li><a href="#">Товары для отдыха</a></li>
+                                <li><a href="#">Товары для рыбалки</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-col-lg-2">
+                <div class="sl_b_catalog">                    
+                    <ul>
+                        <li><a href="#" class="sl_title">Каталог запчастей</a></li>
+                        <li><a href="#" class="sl_title">Оплата и доставка</a></li>
+                        <li><a href="#" class="sl_title">Акции</a></li>
+                        <li><a href="#" class="sl_title">Гарантия</a></li>
+                        <li><a href="#" class="sl_title">Новости</a></li>
+                        <li><a href="#" class="sl_title">Полезные материалы</a></li>
+                    </ul>                       
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- MODALS -->
+<div class="modal fade" id="auth" tabindex="-1" aria-labelledby="auth" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="auth">Авторизация</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="#" class="sl_auth">
+                <div class="form_input_group">
+                    <label for="auth_login">Логин или email</label>
+                    <input type="text" id="auth_login" placeholder="Логин" name="login" value="" class="required">                    
+                </div>
+                <div class="form_input_group">
+                    <label for="auth_password">Пароль</label>
+                    <input type="text" id="auth_password" placeholder="Пароль" name="password" value="" class="required">                   
+                    <div class="desc">
+                        <a href="#">Забыли пароль?</a>
+                    </div>
+                </div>
+                <div class="form_input_group text-center">
+                    <a href="#" class="sl-btn sl-btn-primary-b" data-bs-toggle="modal" data-bs-target="#register">Регистрация</a>
+                    <button class="sl-btn sl-btn-primary">
+                        <span class="tm">Войти</span>
+                    </button>
+                </div>
+                <div class="socials text-center">
+                    <ul class="sl_socials">
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/google.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/yandex.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/vk_auth.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="register" tabindex="-1" aria-labelledby="register" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="register">Регистрация</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="#" class="sl_auth">
+                <div class="form_input_group">
+                    <label for="register_email">Email</label>
+                    <input type="text" id="register_email" placeholder="Email" name="email" value="" class="required">                    
+                </div>
+                <div class="form_input_group">
+                    <label for="register_phone">Телефон</label>
+                    <input type="text" id="register_phone" placeholder="Телефон" name="phone" value="" class="required">                    
+                </div>
+                <div class="form_input_group">
+                    <label for="register_fullname">Имя</label>
+                    <input type="text" id="register_fullname" placeholder="Имя" name="fullname" value="" class="required">                    
+                </div>
+                <div class="form_input_group">
+                    <label for="register_login">Логин</label>
+                    <input type="text" id="register_login" placeholder="Логин" name="login" value="" class="required">                    
+                </div>
+                <div class="form_input_group">
+                    <label for="register_password">Пароль</label>
+                    <input type="text" id="register_password" placeholder="Пароль" name="password" value="" class="required">
+                </div>
+                <div class="form_input_group text-center">
+                    <a href="#" class="sl-btn sl-btn-primary-b" data-bs-toggle="modal" data-bs-target="#auth">Войти</a>
+                    <button class="sl-btn sl-btn-primary">
+                        <span class="tm">Регистрация</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- / MODALS -->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="libs/owlcarousel2/dist/owl.carousel.min.js"></script>
+<script src="libs/match-height/dist/jquery.matchHeight-min.js"></script>
+<script src="libs/fancybox/dist/jquery.fancybox.min.js"></script>
+<script src="libs/maskedinput/dist/jquery.maskedinput.min.js"></script>
+<script src="js/main.js?time=5"></script>
+</body>
+
+</html>

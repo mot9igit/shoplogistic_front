@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffffff">
+<title>Shoplogistic</title>
+<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="libs/owlcarousel2/dist/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="libs/fontawesome5/css/all.min.css">
+<link rel="stylesheet" href="libs/fontawesome5/css/v4-shims.min.css">
+<link rel="stylesheet" href="libs/fancybox/dist/jquery.fancybox.min.css">
+<link rel="stylesheet" href="libs/icofont.css">
+<link rel="stylesheet" href="css/style.css?id=90">
+</head>
+
+<body>
+    <div class="sl_wrapper">
+        <header class="sl_header">
+    <div class="sl_header-top">
+        <div class="sl-base_wrapper">
+            <div class="sl_top-info">
+                <div class="sl-item">
+                    <i class="sl_icon sl_icon-map-marker"></i>
+                    <span>г. Миасс</span>
+                </div>
+                <div class="sl-item">
+                    <i class="sl_icon sl_icon-phone"></i>
+                    <a href="tel:+73512170617">+7 351 217-06-17</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sl_header-bottom">
+        <div class="sl-base_wrapper">
+            <div class="sl-row sl-align-items-center">
+                <div class="d-col-md-2">
+                    <div class="sl_logo">
+                        <a href="#">
+                            <img src="img/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="d-col-md-10">
+                    <div class="sl_navigation">
+                        <ul>
+                            <li>
+                                <a href="#">Каталог товаров</a>
+                                <ul>
+                                    <li><a href="#">Измельчители зерна</a></li>
+                                    <li><a href="#">Доильные агрегаты</a></li>
+                                    <li><a href="#">Измельчители корма</a></li>
+                                    <li><a href="#">Домашние кормоцеха универсальные</a></li>
+                                    <li><a href="#">Агрегаты плющения зерна</a></li>
+                                    <li><a href="#">Маслобойки, электросепараторы</a></li>
+                                    <li><a href="#">Товары для птицы</a></li>
+                                    <li><a href="#">Товары для дома</a></li>
+                                    <li><a href="#">Товары для сада</a></li>
+                                    <li><a href="#">Товары для отдыха</a></li>
+                                    <li><a href="#">Товары для рыбалки</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Каталог запчастей</a>
+                            </li>
+                            <li>
+                                <a href="#">Оплата и доставка</a>
+                            </li>
+                            <li>
+                                <a href="#">Акции</a>
+                            </li>
+                            <li>
+                                <a href="#">Гарантия</a>
+                            </li>
+                            <li>
+                                <a href="#">Журнал</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                            <li>
+                                <div id="msMiniCart" class="sl_minicart ">
+                                    <div class="empty">
+                                        <a href="#">
+                                            <i class="sl_icon sl_icon-cart"></i>
+                                            <span class="sl_minicart-count ms2_total_count">0</span>
+                                        </a>
+                                    </div>
+                                    <div class="not_empty">
+                                        <a href="#">
+                                            <i class="sl_icon sl_icon-cart"></i>
+                                            <span class="sl_minicart-count ms2_total_count">0</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#auth">
+                                    <i class="sl_icon sl_icon-user"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>           
+        </div>   
+    </div>
+    <div class="sl_header-mobile">
+        <div class="sl-base_wrapper">
+            <div class="sl-row sl-align-items-center">
+                <div class="d-col-sm-1 d-col-2">
+                    <a href="#" class="sl_burger sl_noactive">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+                <div class="d-col-sm-4 d-col-4">
+                    <div class="sl_logo">
+                        <a href="#">
+                            <img src="img/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="d-col-sm-7 d-col-6">
+                    <div class="sl_apps">
+                        <div id="msMiniCart" class="sl_minicart ">
+                            <div class="empty">
+                                <a href="#">
+                                    <i class="sl_icon sl_icon-cart"></i>
+                                    <span class="sl_minicart-count ms2_total_count">0</span>
+                                </a>
+                            </div>
+                            <div class="not_empty">
+                                <a href="#">
+                                    <i class="sl_icon sl_icon-cart"></i>
+                                    <span class="sl_minicart-count ms2_total_count">0</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="sl_profile">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#auth">
+                                <i class="sl_icon sl_icon-user"></i>
+                            </a>
+                        </div>
+                    </div>                   
+                </div>
+            </div>
+            <div class="sl_mobile-menu">
+                <ul class="sl_m-menu">
+                    <li>
+                        <a href="#">Каталог товаров</a>
+                    </li>
+                    <li>
+                        <a href="#">Каталог запчастей</a>
+                    </li>
+                    <li>
+                        <a href="#">Оплата и доставка</a>
+                    </li>
+                    <li>
+                        <a href="#">Акции</a>
+                    </li>
+                    <li>
+                        <a href="#">Гарантия</a>
+                    </li>
+                    <li>
+                        <a href="#">Журнал</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+                <div class="sl_mobile-contacts">
+                    <a href="tel:+73512170617" class="sl_phone">+7 351 217-06-17</a>
+                    <span class="sl_desc">6:00 - 15:00 (МСК)</span>
+                    <span class="sl_desc">456313, РФ, Челябинская область, <br/>г. Миасс, Тургоякское шоссе, 9/17</span>
+                    <ul class="sl_socials">
+                        <li>
+                            <a href="#">
+                                <span class="sl_icon sl_icon-vk"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="sl_icon sl_icon-youtube"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="sl_icon sl_icon-instagram"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <main class="sl_main">
+            <div class="breadcrumbs ">
+    <div class="sl-base_wrapper">
+      <nav aria-label="breadcrumb">
+            <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a href="/" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1">
+                </li>
+                <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a href="dostavka.html" itemprop="item"><span itemprop="name">Доставка</span></a><meta itemprop="position" content="2">
+                </li>
+            </ol>	
+        </nav>
+    </div>
+</div>
+            <section class="sl-def-section content withovh">
+                <div class="sl-base_wrapper">
+                    <div class="flyer_filters">
+                        <div class="sl-row align-items-center">
+                            <div class="d-col-6">
+                                <a href="#" class="btn btn-blue btn-rounded filter-toggler noactive">
+                                    <i class="fa fa-filter"></i>
+                                    <span>Фильтры</span>
+                                </a>
+                            </div>
+                            <div class="d-col-6">
+                                <button class="sl-btn sl-btn-text filters_reset">Сбросить фильтры</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PRODUCTS -->
+                    <h1>Категория товаров</h1>
+                    <div class="sl-row">
+                        <div class="d-col-lg-3">
+                            <div class="sidebar">
+                                <!-- widget -->
+                                <div class="blog-widget widget-filters">
+                                    <span class="widget-title">Фильтр</span>
+                                    <a href="#" class="filter-close">×</a>
+                                    <div class="widget-content">
+                                        <!-- filter -->
+                                        <div class="widget-filter">
+                                            <h4 class="filters-title">Инверторное управление</h4>
+                                            <div class="widget-content">
+                                                <div class="custom-control custom-checkbox">
+
+                                                    <input type="checkbox" name="vendor" id="mse2_ms|vendor_0"
+                                                        value="28" class="custom-control-input">
+                                                    <label for="mse2_ms|vendor_0" class="custom-control-label">Да
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+
+                                                    <input type="checkbox" name="vendor" id="mse2_ms|vendor_1"
+                                                        value="29" class="custom-control-input">
+                                                    <label for="mse2_ms|vendor_1" class="custom-control-label">Нет
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- filter -->
+                                        <!-- filter -->
+                                        <div class="widget-filter">
+                                            <h4 class="filters-title">Площадь комнаты</h4>
+                                            <div class="widget-content">
+                                                <div class="custom-control custom-checkbox">
+
+                                                    <input type="checkbox" name="area" id="mse2_ms|area_0" value="0"
+                                                        class="custom-control-input">
+                                                    <label for="mse2_ms|area_0" class="custom-control-label">До
+                                                        15 м<sup>2</sup>
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+
+                                                    <input type="checkbox" name="area" id="mse2_ms|area_1" value="1"
+                                                        class="custom-control-input">
+                                                    <label for="mse2_ms|area_1" class="custom-control-label">До
+                                                        20 м<sup>2</sup>
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+
+                                                    <input type="checkbox" name="area" id="mse2_ms|area_2" value="2"
+                                                        class="custom-control-input">
+                                                    <label for="mse2_ms|area_2" class="custom-control-label">До
+                                                        25 м<sup>2</sup>
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+
+                                                    <input type="checkbox" name="area" id="mse2_ms|area_3" value="3"
+                                                        class="custom-control-input">
+                                                    <label for="mse2_ms|area_3" class="custom-control-label">До
+                                                        30 м<sup>2</sup>
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+
+                                                    <input type="checkbox" name="area" id="mse2_ms|area_4" value="4"
+                                                        class="custom-control-input">
+                                                    <label for="mse2_ms|area_4" class="custom-control-label">До
+                                                        35 м<sup>2</sup>
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+
+                                                    <input type="checkbox" name="area" id="mse2_ms|area_5" value="5"
+                                                        class="custom-control-input">
+                                                    <label for="mse2_ms|area_5" class="custom-control-label">До
+                                                        40 м<sup>2</sup>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- filter -->
+                                    </div>
+                                </div>
+                                <!-- / widget -->
+                            </div>
+                        </div>
+                        <div class="d-col-lg-9">
+                            <div class="sorting_box">
+                                <div class="row">
+                                    <div class="col-lg-10 col-6">
+                                        <div class="sorting_box_inner">
+                                            <span class="sort_title">Сортировать:</span>
+                                            <a href="#" class="sort-toggler">
+                                                <i class="fa fa-sort"></i>
+                                                <span>Сортировка</span>
+                                            </a>
+                                            <div class="sort-params">
+                                                <a href="#" class="sorting_active">сначала дешевле</a>
+                                                <a href="#">сначала дороже</a>
+                                                <a href="#">популярные</a>
+                                                <a href="#">новинки</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-6">
+                                        <a href="#" class="filter-toggler">
+                                            <i class="fa fa-filter"></i>
+                                            <span>Фильтры</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="products">
+                                <div class="sl-row">
+                                    <!-- item -->
+                                    <div class="d-col-xl-4 d-col-lg-6 d-col-md-6 item-wrap">
+                                        <div class="item">
+                                            <div class="image">
+                                                <div class="labels">
+                                                    <div class="avaibles outstock">
+                                                        Нет наличии
+                                                    </div>
+                                                    <div>
+                                                        <span class="labels-hits">Хит продаж</span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="labels-action">Акция</span>
+                                                    </div>
+                                                </div>
+                                                <div class="bigger">
+                                                    <a href="#">
+                                                        <img src="img/products/IZE_05_05M.png" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="text">
+                                                <a href="#" class="category">Измельчители зерна</a>
+                                                <a href="#" class="title">ИЗЭ-05</a>
+                                                <div class="characters">
+                                                    <div class="char-item">
+                                                        <span class="label">Производительность</span>
+                                                        <span class="value">
+                                                            170 кг/час
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="prices-block">
+                                                    <div class="prices">
+                                                        <div class="old_price">
+                                                            <span>4 500</span> руб.
+                                                        </div>
+                                                        <div class="price">
+                                                            <span>4 380</span> руб.
+                                                        </div>
+                                                    </div>
+                                                    <form action="#">
+                                                        <button type="submit" class="sl-btn sl-btn-primary">В
+                                                            корзину</button>
+                                                        <a href="#" class="one-click"><span>Купить в 1
+                                                                клик</span></a>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- / item -->
+                                    <!-- item -->
+                                    <div class="d-col-xl-4 d-col-lg-6 d-col-md-6 item-wrap">
+                                        <div class="item">
+                                            <div class="image">
+                                                <div class="labels">
+                                                    <div class="avaibles instock">
+                                                        В наличии
+                                                    </div>
+                                                    <div>
+                                                        <span class="labels-hits">Хит продаж</span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="labels-action">Акция</span>
+                                                    </div>
+                                                </div>
+                                                <div class="bigger">
+                                                    <a href="#">
+                                                        <img src="img/products/IZE_05_05M.png" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="text">
+                                                <a href="#" class="category">Измельчители зерна</a>
+                                                <a href="#" class="title">ИЗЭ-05М</a>
+                                                <div class="characters">
+                                                    <div class="char-item">
+                                                        <span class="label">Производительность</span>
+                                                        <span class="value">
+                                                            250 кг/час
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="prices-block">
+                                                    <div class="prices">
+                                                        <div class="old_price">
+                                                            <span>4 800</span> руб.
+                                                        </div>
+                                                        <div class="price">
+                                                            <span>4 610</span> руб.
+                                                        </div>
+                                                    </div>
+                                                    <form action="#">
+                                                        <button type="submit" class="sl-btn sl-btn-primary">В
+                                                            корзину</button>
+                                                        <a href="#" class="one-click"><span>Купить в 1
+                                                                клик</span></a>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- / item -->
+                                    <!-- item -->
+                                    <div class="d-col-xl-4 d-col-lg-6 d-col-md-6 item-wrap">
+                                        <div class="item">
+                                            <div class="image">
+                                                <div class="labels">
+                                                    <div class="avaibles instock">
+                                                        В наличии
+                                                    </div>
+                                                    <div>
+                                                        <span class="labels-hits">Хит продаж</span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="labels-action">Акция</span>
+                                                    </div>
+                                                </div>
+                                                <div class="bigger">
+                                                    <a href="#">
+                                                        <img src="img/products/IZE_05_05M.png" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="text">
+                                                <a href="#" class="category">Измельчители зерна</a>
+                                                <a href="#" class="title">ИЗЭ-14</a>
+                                                <div class="characters">
+                                                    <div class="char-item">
+                                                        <span class="label">Производительность</span>
+                                                        <span class="value">
+                                                            300 кг/час
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="prices-block">
+                                                    <div class="prices">
+                                                        <div class="old_price">
+                                                            <span>5 500</span> руб.
+                                                        </div>
+                                                        <div class="price">
+                                                            <span>4 870</span> руб.
+                                                        </div>
+                                                    </div>
+                                                    <form action="#">
+                                                        <button type="submit" class="sl-btn sl-btn-primary">В
+                                                            корзину</button>
+                                                        <a href="#" class="one-click"><span>Купить в 1
+                                                                клик</span></a>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- / item -->
+                                </div>
+                                <div class="paging">
+                                    <a href="#" class="sl-btn sl-btn-outline-secondary sl-btn-block">Загрузить еще</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="sl_footer">
+	<div class="sl-base_wrapper">
+        <div class="sl-row">
+            <div class="d-col-lg-4 order-mobile-3">
+                <a href="tel:+73512170617" class="sl_phone">+7 351 217-06-17</a>
+                <span class="sl_desc">456313, РФ, Челябинская область, <br/>г. Миасс, Тургоякское шоссе, 9/17</span>
+                <ul class="sl_socials">
+                    <li>
+                        <a href="#">
+                            <span class="sl_icon sl_icon-vk"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="sl_icon sl_icon-youtube"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="sl_icon sl_icon-instagram"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-col-lg-6">
+                <a href="#" class="sl_title">Каталог товаров</a>
+                <div class="sl_catalog">
+                    <div class="sl-row">
+                        <div class="d-col-6">
+                            <ul>
+                                <li><a href="#">Измельчители зерна</a></li>
+                                <li><a href="#">Доильные агрегаты</a></li>
+                                <li><a href="#">Измельчители корма</a></li>
+                                <li><a href="#">Домашние кормоцеха универсальные</a></li>
+                                <li><a href="#">Агрегаты плющения зерна</a></li>
+                                <li><a href="#">Маслобойки, электросепараторы</a></li>
+                            </ul>
+                        </div>
+                        <div class="d-col-6">
+                            <ul>
+                                <li><a href="#">Товары для птицы</a></li>
+                                <li><a href="#">Товары для дома</a></li>
+                                <li><a href="#">Товары для сада</a></li>
+                                <li><a href="#">Товары для отдыха</a></li>
+                                <li><a href="#">Товары для рыбалки</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-col-lg-2">
+                <div class="sl_b_catalog">                    
+                    <ul>
+                        <li><a href="#" class="sl_title">Каталог запчастей</a></li>
+                        <li><a href="#" class="sl_title">Оплата и доставка</a></li>
+                        <li><a href="#" class="sl_title">Акции</a></li>
+                        <li><a href="#" class="sl_title">Гарантия</a></li>
+                        <li><a href="#" class="sl_title">Новости</a></li>
+                        <li><a href="#" class="sl_title">Полезные материалы</a></li>
+                    </ul>                       
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- MODALS -->
+<div class="modal fade" id="auth" tabindex="-1" aria-labelledby="auth" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="auth">Авторизация</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="#" class="sl_auth">
+                <div class="form_input_group">
+                    <label for="auth_login">Логин или email</label>
+                    <input type="text" id="auth_login" placeholder="Логин" name="login" value="" class="required">                    
+                </div>
+                <div class="form_input_group">
+                    <label for="auth_password">Пароль</label>
+                    <input type="text" id="auth_password" placeholder="Пароль" name="password" value="" class="required">                   
+                    <div class="desc">
+                        <a href="#">Забыли пароль?</a>
+                    </div>
+                </div>
+                <div class="form_input_group text-center">
+                    <a href="#" class="sl-btn sl-btn-primary-b" data-bs-toggle="modal" data-bs-target="#register">Регистрация</a>
+                    <button class="sl-btn sl-btn-primary">
+                        <span class="tm">Войти</span>
+                    </button>
+                </div>
+                <div class="socials text-center">
+                    <ul class="sl_socials">
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/google.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/yandex.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/vk_auth.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="register" tabindex="-1" aria-labelledby="register" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="register">Регистрация</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="#" class="sl_auth">
+                <div class="form_input_group">
+                    <label for="register_email">Email</label>
+                    <input type="text" id="register_email" placeholder="Email" name="email" value="" class="required">                    
+                </div>
+                <div class="form_input_group">
+                    <label for="register_phone">Телефон</label>
+                    <input type="text" id="register_phone" placeholder="Телефон" name="phone" value="" class="required">                    
+                </div>
+                <div class="form_input_group">
+                    <label for="register_fullname">Имя</label>
+                    <input type="text" id="register_fullname" placeholder="Имя" name="fullname" value="" class="required">                    
+                </div>
+                <div class="form_input_group">
+                    <label for="register_login">Логин</label>
+                    <input type="text" id="register_login" placeholder="Логин" name="login" value="" class="required">                    
+                </div>
+                <div class="form_input_group">
+                    <label for="register_password">Пароль</label>
+                    <input type="text" id="register_password" placeholder="Пароль" name="password" value="" class="required">
+                </div>
+                <div class="form_input_group text-center">
+                    <a href="#" class="sl-btn sl-btn-primary-b" data-bs-toggle="modal" data-bs-target="#auth">Войти</a>
+                    <button class="sl-btn sl-btn-primary">
+                        <span class="tm">Регистрация</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- / MODALS -->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="libs/owlcarousel2/dist/owl.carousel.min.js"></script>
+<script src="libs/match-height/dist/jquery.matchHeight-min.js"></script>
+<script src="libs/fancybox/dist/jquery.fancybox.min.js"></script>
+<script src="libs/maskedinput/dist/jquery.maskedinput.min.js"></script>
+<script src="js/main.js?time=5"></script>
+</body>
+
+</html>
