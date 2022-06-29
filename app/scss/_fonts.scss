@@ -67,6 +67,91 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'icomoon';
+	src:  url('../fonts/icomoon.eot?7lvoqn');
+	src:  url('../fonts/icomoon.eot?7lvoqn#iefix') format('embedded-opentype'),
+	  url('../fonts/icomoon.ttf?7lvoqn') format('truetype'),
+	  url('../fonts/icomoon.woff?7lvoqn') format('woff'),
+	  url('../fonts/icomoon.svg?7lvoqn#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+  
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;  
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+  
+.icon-catalog:before {
+	content: "\e902";
+}
+.icon-sort:before {
+	content: "\e913";
+}
+.icon-search:before {
+	content: "\e912";
+}
+.icon-support:before {
+	content: "\e906";
+}
+.icon-idea:before {
+	content: "\e907";
+}
+.icon-cogs:before {
+	content: "\e908";
+}
+.icon-certificate:before {
+	content: "\e909";
+}
+.icon-cash:before {
+	content: "\e90a";
+}
+  .icon-pie-chart:before {
+	content: "\e90b";
+}
+.icon-Frame-329:before {
+	content: "\e90c";
+}
+.icon-card:before {
+	content: "\e90d";
+}
+.icon-handshake:before {
+	content: "\e90e";
+}
+.icon-truck:before {
+	content: "\e90f";
+}
+.icon-money:before {
+	content: "\e910";
+}
+.icon-cart-alt:before {
+	content: "\e911";
+}
+.icon-phone:before {
+	content: "\e904";
+}
+.icon-mail:before {
+	content: "\e905";
+}
+.icon-home:before {
+	content: "\e901";
+}
+.icon-user:before {
+	content: "\e900";
+}
+.icon-cart:before {
+	content: "\e903";
+}
 
 body{
     font-family: $font-stack;

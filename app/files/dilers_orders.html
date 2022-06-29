@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('./includes/meta.html')
+</head>
+
+<body>
+    <div class="sl_wrapper">
+        @@include('./includes/header.html')
+        <main class="sl_main">
+            @@include('./includes/breadcrumbs.html')
+            <section class="sl-def-section">
+                <div class="sl-base_wrapper">
+                    <h1>Личный кабинет</h1>
+                    <div class="sl-row">
+                        <div class="d-col-md-3">
+                            <div class="sl_diler_widget">
+                                <a href="#" class="sl_diler_widget__history">История операций</a>
+                                <div class="sl_diler_widget__info-text">
+                                    <div class="item">
+                                        <div class="label">Баланс</div>
+                                        <div class="value">1 000 000 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="sl_diler_widget__btn-container">
+                                    <a href="#" class="sl-btn sl-btn-primary">Вывести средства</a>
+                                </div>                                
+                            </div>
+                            <div class="sl_side_menu">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="sl_icon sl_icon-orders"></i>
+                                            <span>Список заказов</span>
+                                        </a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="#">
+                                            <i class="sl_icon sl_icon-users"></i>
+                                            <span>Настройки</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="sl_icon sl_icon-shipping"></i>
+                                            <span>Отгрузки</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="sl_icon sl_icon-products"></i>
+                                            <span>Товары</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="sl_icon sl_icon-dilers"></i>
+                                            <span>Мои дилеры</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="sl_icon sl_icon-documents"></i>
+                                            <span>Документы</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="d-col-md-9">
+                            <div class="orders_filter">
+                                <a href="#" class="active has_newby">Активные</a>
+                                <a href="#">Возвраты</a>
+                                <a href="#">Обработанные</a>
+                            </div>
+                            <div class="diler_orders">
+                                <div class="sl-row">
+                                    <!-- item -->
+                                    <div class="d-col-lg-4">
+                                        <a href="#" class="diler_order newby" data-bs-toggle="modal" data-bs-target="#order">
+                                            <div class="diler_order__head">
+                                                <span class="title">№: 123/45678</span>
+                                                <span class="status">Отмена подтверждена</span>
+                                                <span class="arrow"></span>
+                                            </div>
+                                            <div class="diler_order__text">
+                                               <div class="chars">
+                                                    <div class="item">
+                                                        <span class="label">Заказчик</span>
+                                                        <span class="value">Иванов Иван</span>
+                                                    </div>
+                                                    <div class="item">
+                                                        <span class="label">Телефон</span>
+                                                        <span class="value">+7 999 123 45 67</span>
+                                                    </div>
+                                                    <div class="item">
+                                                       <span class="label">Дата заказа</span>
+                                                       <span class="value">04.04.2022</span>
+                                                    </div>
+                                                    <div class="item">
+                                                        <span class="label">Сумма заказа</span>
+                                                        <span class="value">42 737 ₽</span>
+                                                    </div>
+                                               </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- / item -->
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('./includes/footer.html')
+        <div class="modal fade" id="order" tabindex="-1" aria-labelledby="order_title" aria-modal="true" role="dialog">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="remain_title">Заказ № 1234567890</h5>
+                  <form action="#" class="change_status">
+                    <select class="form-select">
+                        <option value="1">Новый</option>
+                        <option value="2">Оплачен</option>
+                        <option value="3">Доставлен</option>
+                        <option value="3">Отменен</option>
+                      </select>
+                  </form>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal_order">
+                        <div class="modal_order_info">
+                            <div class="chars">
+                                <div class="item">
+                                    <span class="label">Заказчик</span>
+                                    <span class="value">Иванов Иван</span>
+                                </div>
+                                <div class="item">
+                                    <span class="label">Телефон</span>
+                                    <span class="value">+7 999 123 45 67</span>
+                                </div>
+                                <div class="item">
+                                   <span class="label">Дата заказа</span>
+                                   <span class="value">04.04.2022</span>
+                                </div>
+                                <div class="item">
+                                    <span class="label">Сумма заказа</span>
+                                    <span class="value">42 737 ₽</span>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="modal_order_products">
+                            <!-- head -->
+                            <div class="modal_order_products__head">
+                                <div class="modal_order_products__photo">
+                                    <span>Фото</span>
+                                </div>
+                                <div class="modal_order_products__name">
+                                    <span>Наименование</span>
+                                </div>
+                                <div class="modal_order_products__article">
+                                    <span>Артикул</span>
+                                </div>
+                                <div class="modal_order_products__count">
+                                    <span>Кол-во</span>
+                                </div>
+                            </div>
+                            <!-- / head -->
+                            <!-- body -->
+                            <div class="modal_order_products__body">
+                                <div class="modal_order_products__item">
+                                    <div class="modal_order_products__photo">
+                                        <a href="#">
+                                            <img src="img/products/product_profile.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="modal_order_products__name">
+                                        <a href="#">Измельчитель зерна 300 кг/час (ИЗЭ-14)</a>
+                                    </div>
+                                    <div class="modal_order_products__article">
+                                        <span>123456787905</span>
+                                    </div>
+                                    <div class="modal_order_products__count">
+                                        <span>1 шт</span>
+                                    </div>
+                                </div>        
+                                <div class="modal_order_products__item">
+                                    <div class="modal_order_products__photo">
+                                        <a href="#">
+                                            <img src="img/products/product_profile.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="modal_order_products__name">
+                                        <a href="#">Измельчитель зерна 300 кг/час (ИЗЭ-14)</a>
+                                    </div>
+                                    <div class="modal_order_products__article">
+                                        <span>123456787905</span>
+                                    </div>
+                                    <div class="modal_order_products__count">
+                                        <span>1 шт</span>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- / body -->
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    @@include('./includes/scripts.html')
+</body>
+
+</html>

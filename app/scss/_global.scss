@@ -11,6 +11,7 @@ body {
 	display: flex;
     flex-direction: column;
     height: 100%;
+	min-height: 100vh;
 }
 
 .sl_noscroll{
@@ -18,11 +19,11 @@ body {
 }
 
 .sl_container{
-	max-width: 1300px;
+	max-width: 1220px;
 }
 
 .sl-base_wrapper {
-	max-width: 1300px;
+	max-width: 1220px;
 	width: 100%;
 	margin-left: auto;
     margin-right: auto;
@@ -64,7 +65,7 @@ h1, .h1{
 	font-size: 30px;
 	line-height: 37px;
 	color: #00061A;
-	margin-bottom: 22px;
+	margin-bottom: 32px;
 }
 
 h3, .h3{
@@ -74,7 +75,6 @@ h3, .h3{
 	font-weight: 500;
 	margin-top: 40px;
 	margin-bottom: 16px;
-	text-align: center;
 	color: #75787b;
 }
 
@@ -161,15 +161,42 @@ h4, .h4{
 }
 
 p{
+	font-family: $circe;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 130%;
+	color: #00061A;
 	margin-bottom: 15px;
 }
 
+ol,
+ul{
+	padding-left: 15px;
+	font-family: $circe;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 130%;
+	color: #00061A;
+	margin-bottom: 15px;
+}
+
+.form-check-input:checked {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+}
+
 /* ----------------- LAYOUT ------------- */
+.flex-right{
+	display: flex;
+	justify-content: end;
+}
 .sl-row {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: -12px;
+    margin-left: -12px;	
 }
 
 .sl-align-items-center {
@@ -191,13 +218,13 @@ p{
 	.d-col-sm-#{$i},
 	.d-col-md-#{$i},
 	.d-col-lg-#{$i},
-	.d-col-xl-#{$i}
+	.d-col-xl-#{$i},
 	.d-col-xxl-#{$i} {
 		position: relative;
 		width: 100%;
 		min-height: 1px;
-		padding-right: 15px;
-		padding-left: 15px;
+		padding-right: 12px;
+		padding-left: 12px;
 	}
 }
 
@@ -256,3 +283,21 @@ p{
 	}
 }
 /* ----------------- / LAYOUT ------------- */
+
+@keyframes hook {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(-30px, 0);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+	75% {
+        transform: translate(-30px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}

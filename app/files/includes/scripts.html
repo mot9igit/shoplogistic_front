@@ -1,8 +1,34 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script src="libs/bootstrap/js/bootstrap.min.js"></script>
 <script src="libs/owlcarousel2/dist/owl.carousel.min.js"></script>
 <script src="libs/match-height/dist/jquery.matchHeight-min.js"></script>
 <script src="libs/fancybox/dist/jquery.fancybox.min.js"></script>
 <script src="libs/maskedinput/dist/jquery.maskedinput.min.js"></script>
 <script src="js/main.js?time=5"></script>
+<script>
+    $(document).ready(function(){
+        if($("#contact_map").length){
+            ymaps.ready(function(){
+                var myMap = new ymaps.Map("contact_map", {
+                    center: [55.088225, 60.126028],
+                    zoom: 16
+                }, {
+                    searchControlProvider: 'yandex#search'
+                });
+                var myGeoObject = new ymaps.Placemark([55.088225, 60.126028], {
+                    balloonContent: 'ООО "Уралспецмаш"'
+                }, {
+                    preset: 'islands#icon',
+                    iconColor: '#002fa8'
+                });
+                myMap.geoObjects.add(myGeoObject);
+                myMap.behaviors.disable('multiTouch');
+                myMap.behaviors.disable('drag');
+                myMap.behaviors.disable('scrollZoom');
+            });
+        }
+    });
+</script>

@@ -2,11 +2,27 @@
     <div class="sl_header-top">
         <div class="sl-base_wrapper">
             <div class="sl_top-info">
-                <div class="sl-item">
-                    <i class="sl_icon sl_icon-map-marker"></i>
-                    <span>г. Миасс</span>
+                <div class="geo_data">
+                    <div class="sl-item city_check">
+                        <a href="#">
+                            <span>г. Миасс</span>
+                        </a>
+                        <div class="city_popup">
+                            <span>Вы находитесь в г. Пермь?</span>
+                            <div class="buttons">
+                                <a href="#" class="sl-btn sl-btn-outline-secondary">Нет, другой</a>
+                                <a href="#" class="sl-btn sl-btn-primary">Да, верно</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sl-item sl-item-store">
+                        <a href="#">
+                            <i class="sl_icon sl_icon-map-marker"></i>
+                            <span>Магазин</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="sl-item">
+                <div class="sl-item sl-item-phone">
                     <i class="sl_icon sl_icon-phone"></i>
                     <a href="tel:+73512170617">+7 351 217-06-17</a>
                 </div>
@@ -77,9 +93,11 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#auth">
-                                    <i class="sl_icon sl_icon-user"></i>
-                                </a>
+                                <div class="sl_user_profile">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#auth">
+                                        <i class="sl_icon sl_icon-user"></i>
+                                    </a>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -90,42 +108,42 @@
     <div class="sl_header-mobile">
         <div class="sl-base_wrapper">
             <div class="sl-row sl-align-items-center">
-                <div class="d-col-sm-1 d-col-2">
+                
+                <div class="d-col-sm-2 d-col-2">
+                    <div class="sl_logo">
+                        <a href="#">
+                            <img src="img/logo_mobile.svg" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="d-col-sm-8 d-col-8">
+                    <div class="geo_data">
+                        <div class="sl-item city_check">
+                            <a href="#">
+                                <span>г. Миасс</span>
+                            </a>
+                            <div class="city_popup">
+                                <span>Вы находитесь в г. Пермь?</span>
+                                <div class="buttons">
+                                    <a href="#" class="sl-btn sl-btn-outline-secondary">Нет, другой</a>
+                                    <a href="#" class="sl-btn sl-btn-primary">Да, верно</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sl-item sl-item-store">
+                            <a href="#">
+                                <i class="sl_icon sl_icon-map-marker"></i>
+                                <span>Магазин</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-col-sm-2 d-col-2 flex-right">
                     <a href="#" class="sl_burger sl_noactive">
                         <span></span>
                         <span></span>
                         <span></span>
                     </a>
-                </div>
-                <div class="d-col-sm-4 d-col-4">
-                    <div class="sl_logo">
-                        <a href="#">
-                            <img src="img/logo.svg" alt="logo">
-                        </a>
-                    </div>
-                </div>
-                <div class="d-col-sm-7 d-col-6">
-                    <div class="sl_apps">
-                        <div id="msMiniCart" class="sl_minicart ">
-                            <div class="empty">
-                                <a href="#">
-                                    <i class="sl_icon sl_icon-cart"></i>
-                                    <span class="sl_minicart-count ms2_total_count">0</span>
-                                </a>
-                            </div>
-                            <div class="not_empty">
-                                <a href="#">
-                                    <i class="sl_icon sl_icon-cart"></i>
-                                    <span class="sl_minicart-count ms2_total_count">0</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="sl_profile">
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#auth">
-                                <i class="sl_icon sl_icon-user"></i>
-                            </a>
-                        </div>
-                    </div>                   
                 </div>
             </div>
             <div class="sl_mobile-menu">
@@ -167,14 +185,168 @@
                                 <span class="sl_icon sl_icon-youtube"></span>
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
-                                <span class="sl_icon sl_icon-instagram"></span>
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 </header>
+
+<div class="mobile_navigation">
+    <ul>
+        <li>
+            <a href="#">
+                <i class="icon icon-home"></i>
+                <span>Главная</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="toggle_catalog">
+                <i class="icon icon-catalog"></i>
+                <span>Каталог</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="sl_minicart msMiniCart">
+                    <div class="empty">
+                        <i class="icon icon-cart"></i>
+                        <span class="sl_minicart-count ms2_total_count">0</span>
+                    </div>
+                    <div class="not_empty">
+                        <i class="icon icon-cart"></i>
+                        <span class="sl_minicart-count ms2_total_count">0</span>
+                    </div>
+                </div>               
+                <span>Корзина</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="toggle_lk">
+                <i class="icon icon-user"></i>
+                <span>Кабинет</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="mobile_catalog mobile_menu_catalog">
+    <div class="mobile-catalog__content">
+        <div class="root_menu active">
+            <div class="sl_side_menu">
+                <ul>
+                    <li class="has_children">
+                        <a href="#products_menu" data-target="#products_menu">
+                            <span>Каталог товаров</span>
+                        </a>
+                    </li>
+                    <li class="has_children">
+                        <a href="#details_menu">
+                            <span>Каталог запчастей</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mobile-catalog__inner-block" id="products_menu">
+            <div class="sl_side_menu">
+                <ul class="mobile_inner_menu" id="products_menu">
+                    <li>
+                        <a href="#" data-target=".root_menu" class="back">
+                            <span>Назад</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-izm_zer"></i>
+                            <span>Измельчители зерна</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-doi_agr"></i>
+                            <span>Доильные агрегаты</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-izm_korm"></i>
+                            <span>Измельчители корма</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-dom_korm"></i>
+                            <span>Домашние кормоцеха универсальные</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-plush"></i>
+                            <span>Агрегаты плющения зерна</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-maslo"></i>
+                            <span>Маслобойки, электросепараторы</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-ptic"></i>
+                            <span>Товары для птицы</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-dom"></i>
+                            <span>Товары для дома</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-sad"></i>
+                            <span>Товары для сада</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-otdyh"></i>
+                            <span>Товары для отдыха</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-ryb"></i>
+                            <span>Товары для рыбалки</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>       
+</div>
+
+<div class="mobile_catalog mobile_menu_lk">
+    <div class="mobile-catalog__content">
+        <div class="root_menu active">
+            <div class="sl_side_menu">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-orders"></i>
+                            <span>Список заказов</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <i class="sl_icon sl_icon-cog"></i>
+                            <span>Настройки</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>       
+</div>

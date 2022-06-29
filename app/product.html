@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="libs/owlcarousel2/dist/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="libs/fontawesome5/css/all.min.css">
 <link rel="stylesheet" href="libs/fontawesome5/css/v4-shims.min.css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
 <link rel="stylesheet" href="libs/fancybox/dist/jquery.fancybox.min.css">
 <link rel="stylesheet" href="libs/icofont.css">
 <link rel="stylesheet" href="css/style.css?id=90">
@@ -21,11 +22,27 @@
     <div class="sl_header-top">
         <div class="sl-base_wrapper">
             <div class="sl_top-info">
-                <div class="sl-item">
-                    <i class="sl_icon sl_icon-map-marker"></i>
-                    <span>г. Миасс</span>
+                <div class="geo_data">
+                    <div class="sl-item city_check">
+                        <a href="#">
+                            <span>г. Миасс</span>
+                        </a>
+                        <div class="city_popup">
+                            <span>Вы находитесь в г. Пермь?</span>
+                            <div class="buttons">
+                                <a href="#" class="sl-btn sl-btn-outline-secondary">Нет, другой</a>
+                                <a href="#" class="sl-btn sl-btn-primary">Да, верно</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sl-item sl-item-store">
+                        <a href="#">
+                            <i class="sl_icon sl_icon-map-marker"></i>
+                            <span>Магазин</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="sl-item">
+                <div class="sl-item sl-item-phone">
                     <i class="sl_icon sl_icon-phone"></i>
                     <a href="tel:+73512170617">+7 351 217-06-17</a>
                 </div>
@@ -96,9 +113,11 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#auth">
-                                    <i class="sl_icon sl_icon-user"></i>
-                                </a>
+                                <div class="sl_user_profile">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#auth">
+                                        <i class="sl_icon sl_icon-user"></i>
+                                    </a>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -109,42 +128,42 @@
     <div class="sl_header-mobile">
         <div class="sl-base_wrapper">
             <div class="sl-row sl-align-items-center">
-                <div class="d-col-sm-1 d-col-2">
+                
+                <div class="d-col-sm-2 d-col-2">
+                    <div class="sl_logo">
+                        <a href="#">
+                            <img src="img/logo_mobile.svg" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="d-col-sm-8 d-col-8">
+                    <div class="geo_data">
+                        <div class="sl-item city_check">
+                            <a href="#">
+                                <span>г. Миасс</span>
+                            </a>
+                            <div class="city_popup">
+                                <span>Вы находитесь в г. Пермь?</span>
+                                <div class="buttons">
+                                    <a href="#" class="sl-btn sl-btn-outline-secondary">Нет, другой</a>
+                                    <a href="#" class="sl-btn sl-btn-primary">Да, верно</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sl-item sl-item-store">
+                            <a href="#">
+                                <i class="sl_icon sl_icon-map-marker"></i>
+                                <span>Магазин</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-col-sm-2 d-col-2 flex-right">
                     <a href="#" class="sl_burger sl_noactive">
                         <span></span>
                         <span></span>
                         <span></span>
                     </a>
-                </div>
-                <div class="d-col-sm-4 d-col-4">
-                    <div class="sl_logo">
-                        <a href="#">
-                            <img src="img/logo.svg" alt="logo">
-                        </a>
-                    </div>
-                </div>
-                <div class="d-col-sm-7 d-col-6">
-                    <div class="sl_apps">
-                        <div id="msMiniCart" class="sl_minicart ">
-                            <div class="empty">
-                                <a href="#">
-                                    <i class="sl_icon sl_icon-cart"></i>
-                                    <span class="sl_minicart-count ms2_total_count">0</span>
-                                </a>
-                            </div>
-                            <div class="not_empty">
-                                <a href="#">
-                                    <i class="sl_icon sl_icon-cart"></i>
-                                    <span class="sl_minicart-count ms2_total_count">0</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="sl_profile">
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#auth">
-                                <i class="sl_icon sl_icon-user"></i>
-                            </a>
-                        </div>
-                    </div>                   
                 </div>
             </div>
             <div class="sl_mobile-menu">
@@ -186,17 +205,171 @@
                                 <span class="sl_icon sl_icon-youtube"></span>
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
-                                <span class="sl_icon sl_icon-instagram"></span>
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 </header>
+
+<div class="mobile_navigation">
+    <ul>
+        <li>
+            <a href="#">
+                <i class="icon icon-home"></i>
+                <span>Главная</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="toggle_catalog">
+                <i class="icon icon-catalog"></i>
+                <span>Каталог</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="sl_minicart msMiniCart">
+                    <div class="empty">
+                        <i class="icon icon-cart"></i>
+                        <span class="sl_minicart-count ms2_total_count">0</span>
+                    </div>
+                    <div class="not_empty">
+                        <i class="icon icon-cart"></i>
+                        <span class="sl_minicart-count ms2_total_count">0</span>
+                    </div>
+                </div>               
+                <span>Корзина</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="toggle_lk">
+                <i class="icon icon-user"></i>
+                <span>Кабинет</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="mobile_catalog mobile_menu_catalog">
+    <div class="mobile-catalog__content">
+        <div class="root_menu active">
+            <div class="sl_side_menu">
+                <ul>
+                    <li class="has_children">
+                        <a href="#products_menu" data-target="#products_menu">
+                            <span>Каталог товаров</span>
+                        </a>
+                    </li>
+                    <li class="has_children">
+                        <a href="#details_menu">
+                            <span>Каталог запчастей</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mobile-catalog__inner-block" id="products_menu">
+            <div class="sl_side_menu">
+                <ul class="mobile_inner_menu" id="products_menu">
+                    <li>
+                        <a href="#" data-target=".root_menu" class="back">
+                            <span>Назад</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-izm_zer"></i>
+                            <span>Измельчители зерна</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-doi_agr"></i>
+                            <span>Доильные агрегаты</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-izm_korm"></i>
+                            <span>Измельчители корма</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-dom_korm"></i>
+                            <span>Домашние кормоцеха универсальные</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-plush"></i>
+                            <span>Агрегаты плющения зерна</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-maslo"></i>
+                            <span>Маслобойки, электросепараторы</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-ptic"></i>
+                            <span>Товары для птицы</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-dom"></i>
+                            <span>Товары для дома</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-sad"></i>
+                            <span>Товары для сада</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-otdyh"></i>
+                            <span>Товары для отдыха</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-ryb"></i>
+                            <span>Товары для рыбалки</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>       
+</div>
+
+<div class="mobile_catalog mobile_menu_lk">
+    <div class="mobile-catalog__content">
+        <div class="root_menu active">
+            <div class="sl_side_menu">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-orders"></i>
+                            <span>Список заказов</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <i class="sl_icon sl_icon-cog"></i>
+                            <span>Настройки</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>       
+</div>
         <main class="sl_main">
             <div class="breadcrumbs ">
     <div class="sl-base_wrapper">
@@ -212,180 +385,492 @@
         </nav>
     </div>
 </div>
-            <section class="sl-def-section content withovh">
+            <section class="sl-def-section sl-product">
                 <div class="sl-base_wrapper">
-                    <div class="productHeading">
-                        <div class="productName">
-                            <h1 class="productName__titile">
-                                ИЗЭ-05
-                            </h1>
-                            <p class="productName__subtitle">
-                                Измельчитель зерна 170 кг/час
-                            </p>
-                        </div>
-                    </div>
-                    <div class="productRepresentation">
-                        <div class="productPhoto__img">
-                            <div class="msoptionsprice-gallery" id="msGallery">
-                                <div class="fotorama" data-nav="thumbs" data-width="100%" data-thumbheight="45"
-                                    data-allowfullscreen="true" data-swipe="true">
-                                    <a href="img/products/ize-05-05m.png" target="_blank" data-rid="185" data-iid="74">
-                                        <img src="img/products/ize-05-05m.jpg" alt="" title="">
-                                    </a>
-                                    <a href="img/products/dsc5778.png" target="_blank" data-rid="185" data-iid="3348">
-                                        <img src="img/products/dsc5778.jpg" alt="" title="">
-                                    </a>
-                                    <a href="img/products/dsc5781.png" target="_blank" data-rid="185" data-iid="3354">
-                                        <img src="img/products/dsc5781.jpg" alt="" title="">
-                                    </a>
-                                    <a href="img/products/dsc5769.jpg" target="_blank" data-rid="185" data-iid="3342">
-                                        <img src="img/products/dsc5769.jpg" alt="" title="">
-                                    </a>
+                    <div class="sl-row">
+                        <div class="d-col-xl-7 d-col-lg-6">
+                            <div class="product-gallery">
+                                <div class="bigger">
+                                    <div class="big-gallery owl-carousel">
+                                        <!-- item -->
+                                        <div class="item">
+                                            <a href="img/product/1.png" data-fancybox="gal">
+                                                <img src="img/product/1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <!-- / item -->
+                                        <!-- item -->
+                                        <div class="item">
+                                            <a href="img/product/2.png" data-fancybox="gal">
+                                                <img src="img/product/2.png" alt="">
+                                            </a>
+                                        </div>
+                                        <!-- / item -->
+                                        <!-- item -->
+                                        <div class="item">
+                                            <a href="img/product/3.png" data-fancybox="gal">
+                                                <img src="img/product/3.png" alt="">
+                                            </a>
+                                        </div>
+                                        <!-- / item -->
+                                        <!-- item -->
+                                        <div class="item">
+                                            <a href="img/product/4.jpg" data-fancybox="gal">
+                                                <img src="img/product/4.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <!-- / item -->
+                                    </div>
                                 </div>
+                                <!-- small gal -->
+                                <div class="small-gallery owl-carousel">
+                                    <!-- item -->
+                                    <div class="item">
+                                        <img src="img/product/1.png" alt="">
+                                    </div>
+                                    <!-- / item -->
+                                    <!-- item -->
+                                    <div class="item">
+                                        <img src="img/product/2.png" alt="">
+                                    </div>
+                                    <!-- / item -->
+                                    <!-- item -->
+                                    <div class="item">
+                                        <img src="img/product/3.png" alt="">
+                                    </div>
+                                    <!-- / item -->
+                                    <!-- item -->
+                                    <div class="item">
+                                        <img src="img/product/4.jpg" alt="">
+                                    </div>
+                                    <!-- / item -->
+                                </div>
+                                <!-- / small gal -->
                             </div>
                         </div>
-                        <div class="productInfo" id="msProduct">
-                            <div class="stocks">
-                            </div>
-                            <form class="productBuyCard ms2_form" method="post">
-                                <input type="hidden" name="id" value="185">
-                                <input type="hidden" name="count" id="product_price" value="1">
-
-                                <p class="productBuyCard__price">4 380</p>
-                                <p class="productBuyCard__paymentMethod">наличные, банковская карта, яндекс деньги,
-                                    банкомат, терминал</p>
-                                <p class="productBuyCard__text">Доставка любой ТК </p>
-                                <p class="productBuyCard__text">Купите этот товар у нашего официально дилера и не
-                                    платите за доставку!</p>
-                                <div class="productBuyCardButtons">
-                                    <button class="productBuyCardButtons__button btn" type="submit" name="ms2_action"
-                                        value="cart/add">Добавить в корзину</button>
-                                    <a href="katalog-tovarov/izmelchiteli-zerna/ize-05#mapDiler"
-                                        class="productBuyCardButtons__button_text">Показать ближайший магазин</a>
-                                </div>
-                            </form>
-                            <div class="productInfoCard">
-                                <div class="productCharacteristicsCard">
-                                    <div class="productCharacteristicsCard__Characteristic">Измельчение зерна:
-                                        <span class="productCharacteristicsCard__Characteristic"> 170&nbsp;кг/час
-                                        </span>
-                                    </div>
-                                    <div class="productCharacteristicsCard__Characteristic">Потребляемая мощность:
-                                        <span class="productCharacteristicsCard__Characteristic"> 800&nbsp;Вт </span>
-                                    </div>
-                                    <div class="productCharacteristicsCard__Characteristic">Объём загрузочного бункера:
-                                        <span class="productCharacteristicsCard__Characteristic"> 5&nbsp;л </span>
-                                    </div>
-                                    <div class="productCharacteristicsCard__Characteristic">Вес брутто:
-                                        <span class="productCharacteristicsCard__Characteristic"> 6.57&nbsp;кг </span>
-                                    </div>
-                                    <div class="productCharacteristicsCard__Characteristic">Вес нетто:
-                                        <span class="productCharacteristicsCard__Characteristic"> 6.09&nbsp;кг </span>
-                                    </div>
-                                    <div class="productCharacteristicsCard__Characteristic">Длина:
-                                        <span class="productCharacteristicsCard__Characteristic"> 31&nbsp;см </span>
-                                    </div>
-                                    <div class="productCharacteristicsCard__Characteristic">Ширина:
-                                        <span class="productCharacteristicsCard__Characteristic"> 35&nbsp;см </span>
-                                    </div>
-                                    <div class="productCharacteristicsCard__Characteristic">Высота:
-                                        <span class="productCharacteristicsCard__Characteristic"> 41&nbsp;см </span>
-                                    </div>
-                                    <div class="productCharacteristicsCard__Characteristic">Объем куб. м:
-                                        <span class="productCharacteristicsCard__Characteristic"> 0.04&nbsp; </span>
-                                    </div>
-                                </div>
-                                <a href="doc/pasport/pasport-ize.pdf" target="_blank" class="productPasportDownload">
-                                    <div class="productPasportDownload__ico"></div>
-                                    <div class="productPasportDownload__text">Скачать паспорт</div>
+                        <div class="d-col-xl-5 d-col-lg-6">
+                            <div class="product_banner">
+                                <a href="#">
+                                    <img src="img/product_banner.jpg" alt="">
                                 </a>
                             </div>
+                            <div class="product_info">
+                                <h1>Измельчитель зерна ИЗЭ-05</h1>
+                                <span class="desc">Производительность 170 кг/час</span>
+                                <div class="price_block">
+                                    <span class="price">3 660 ₽</span>
+                                </div>
+                                <div class="delivery_block">
+                                    <!-- item -->
+                                    <div class="item">
+                                        <div class="icon">
+                                            <i class="sl_icon sl_icon-box"></i>
+                                        </div>
+                                        <div class="text">
+                                            <span class="name">Самовывоз</span>
+                                            <span class="desc">Бесплатно<br/>
+                                                (сегодня)</span>
+                                        </div>
+                                    </div>
+                                    <!-- / item -->
+                                    <!-- item -->
+                                    <div class="item">
+                                        <div class="icon">
+                                            <i class="sl_icon sl_icon-auto"></i>
+                                        </div>
+                                        <div class="text">
+                                            <span class="name">Доставка до ТК</span>
+                                            <span class="desc">от 300 ₽<br/>
+                                                (26.04.2022)</span>
+                                        </div>
+                                    </div>
+                                    <!-- / item -->
+                                    <!-- item -->
+                                    <div class="item">
+                                        <div class="icon">
+                                            <i class="sl_icon sl_icon-delivery"></i>
+                                        </div>
+                                        <div class="text">
+                                            <span class="name">Доставка курьером</span>
+                                            <span class="desc">от 300 ₽<br/>
+                                                (26.04.2022)</span>
+                                        </div>
+                                    </div>
+                                    <!-- / item -->
+                                </div>
+                                <div class="button-container">
+                                    <button type="submit" class="sl-btn sl-btn-big sl-btn-primary">Добавить в корзину</button>
+                                </div>                                
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="sl-def-section">
                 <div class="sl-base_wrapper">
-                    <div class="productDiscription">
-                        <p class="productDiscription__text">Измельчитель зерна предназначен для получения фуражного
-                            дроблёного зерна разной фракции для птиц и домашнего скота. Для измельчения используются
-                            практически все виды зерновых культур: злаковые, бобовые, кукуруза и другие. Принцип
-                            работы
-                            изделия: в загрузочный бункер засыпается сырьё, которое поступает в рабочую камеру, где
-                            измельчается до нужной фракции вращающимся режущим инструментом (ножом). Степень
-                            измельчения
-                            можно регулировать заслонкой рабочей камеры. Во время эксплуатации измельчитель
-                            устанавливают на любую емкость объёмом 12-40 литров. Изделие комплектуется сменным
-                            боковым
-                            ситом с отверстиями диаметром 5 мм. Для изменения размера получаемой фракции,
-                            дополнительно
-                            можно приобрести боковые сита диаметром 4 и 6 мм.</p>
-                        <div class="productDiscription__video"><iframe width="320" height="auto"
-                                src="https://www.youtube.com/embed/-CA4dFJtpek" frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen=""></iframe></div>
+                    <h2>Характеристики</h2>
+                    <div class="characters">
+                        <div class="item">
+                            <span class="label">Измельчение зерна:</span>
+                            <span class="value">170 кг/час</span>
+                        </div>
+                        <div class="item">
+                            <span class="label">Длина:</span>
+                            <span class="value">31 см</span>
+                        </div>
+                        <div class="item">
+                            <span class="label">Потребляемая мощность: </span>
+                            <span class="value">800 Вт</span>
+                        </div>
+                        <div class="item">
+                            <span class="label">Ширина:</span>
+                            <span class="value">35 см</span>
+                        </div>
+                        <div class="item">
+                            <span class="label">Объём загрузочного бункера:</span>
+                            <span class="value">5 л</span>
+                        </div>
+                        <div class="item">
+                            <span class="label">Высота:</span>
+                            <span class="value">41 см</span>
+                        </div>
+                        <div class="item">
+                            <span class="label">Вес брутто: </span>
+                            <span class="value">6.57 кг</span>
+                        </div>
+                        <div class="item">
+                            <span class="label">Объем куб. м:</span>
+                            <span class="value">0.04</span>
+                        </div>
+                        <div class="item">
+                            <span class="label">Вес нетто:</span>
+                            <span class="value">6.09 кг</span>
+                        </div>
+                        <div class="item">
+                            <span class="label">Гарантийный срок</span>
+                            <span class="value">?</span>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <a href="#" class="sl-btn sl-btn-big sl-btn-primary-outline">Скачать паспорт</a>
                     </div>
                 </div>
             </section>
             <section class="sl-def-section">
-                <div class="wrapperAdvantages">
-                    <div class="AdvantagesCard">
-                        <img src="img/Advantages/IZE/dvojnoe_ohlagdenie_dvigatelya.png" class="AdvantagesCard__img">
-
-                        <h3 class="AdvantagesCard__h3">Двойное охлаждение двигателя</h3>
-                        <p class="AdvantagesCard__text">2 вентилятора лучше охлаждают двигатель</p>
-
-                    </div>
-
-                    <div class="AdvantagesCard">
-                        <img src="img/Advantages/IZE/zakalennye_noji.png" class="AdvantagesCard__img">
-
-                        <h3 class="AdvantagesCard__h3">Закалённые ножи</h3>
-                        <p class="AdvantagesCard__text">Проходят термообработку до твёрдости 30...45 HRC и
-                            дефектоскопию
-                        </p>
-
-                    </div>
-
-                    <div class="AdvantagesCard">
-                        <img src="img/Advantages/IZE/zashita_ot_peregruzki.png" class="AdvantagesCard__img">
-
-                        <h3 class="AdvantagesCard__h3">Защита от перегрузки</h3>
-                        <p class="AdvantagesCard__text">Двойная защита двигателя: от перегрева и скачков напряжения
-                        </p>
-
-                    </div>
-
-                    <div class="AdvantagesCard">
-                        <img src="img/Advantages/IZE/zashita_ot_pyli.png" class="AdvantagesCard__img">
-
-                        <h3 class="AdvantagesCard__h3">Защита от пыли</h3>
-                        <p class="AdvantagesCard__text">Подшипник двигателя защищён специальным пыльником</p>
-
-                    </div>
-                </div>
-            </section>
-            <section class="sl-def-section">
-                <div class="wrapperPage">
-                    <div class="wrapperPage_colum">
-                        <h2 id="mapDiler" class="h2">Официальные дилеры</h2>
-                        <div class="map">
-                            <div class="mline"></div>
-                            <div class="lmap">
-
-                                <div class="mapselect">
-                                    <select id="mapgroup"></select>
-                                </div>
-
-                                <div id="lmapObjects"></div>
-                            </div>
-                            <div class="rmap">
-                                <div id="map"></div>
-                            </div>
+                <div class="sl-base_wrapper">
+                    <h2>Описание</h2>
+                    <div class="sl-row">
+                        <div class="d-col-md-6">
+                            <p>Измельчитель зерна предназначен для получения фуражного дроблёного зерна разной фракции для птиц и домашнего скота. Для измельчения используются практически все виды зерновых культур: злаковые, бобовые, кукуруза и другие. Принцип работы изделия: в загрузочный бункер засыпается сырьё, которое поступает в рабочую камеру, где измельчается до нужной фракции вращающимся режущим инструментом (ножом). Степень измельчения можно регулировать заслонкой рабочей камеры. Во время эксплуатации измельчитель устанавливают на любую емкость объёмом 12-40 литров. Изделие комплектуется сменным боковым ситом с отверстиями диаметром 5 мм. Для изменения размера получаемой фракции, дополнительно можно приобрести боковые сита диаметром 4 и 6 мм.
+                            </p>
+                        </div>
+                        <div class="d-col-md-6 text-right">
+                            <a href="https://www.youtube.com/watch?v=-CA4dFJtpek" class="video_href" data-fancybox="">
+                                <img src="img/video.jpg" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
             </section>
+            <section class="sl-def-section">
+                <div class="sl-base_wrapper no-padding-tablets-right">
+                    <h2>Преимущества</h2>
+                    <div class="product_advantages">
+                        <div class="sl-row owl-carousel-tablets owl-carousel off">
+                            <!-- item -->
+                            <div class="d-col-md-6">
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="img/advantages/1.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <span class="title">Двойное охлаждение двигателя</span>
+                                        <p>2 вентилятора лучше охлаждают двигатель</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <!-- item -->
+                            <div class="d-col-md-6">
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="img/advantages/2.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <span class="title">Закалённые ножи</span>
+                                        <p>Проходят термообработку до твёрдости 30...45 HRC и дефектоскопию</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <!-- item -->
+                            <div class="d-col-md-6">
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="img/advantages/3.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <span class="title">Защита от перегрузки</span>
+                                        <p>Двойная защита двигателя: от перегрева и скачков напряжения</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <!-- item -->
+                            <div class="d-col-md-6">
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="img/advantages/4.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <span class="title">Защита от пыли</span>
+                                        <p>Подшипник двигателя защищён специальным пыльником</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sl-def-section sl-products">
+                <div class="sl-base_wrapper">
+                    <h2>Сопутствующие товары</h2>
+                    <div class="def-slider seeto-slider owl-carousel">
+                        <!-- item -->
+                        <div class="item">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="img/product.png" alt="">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <a href="#" class="title">ИЗЭ-14</a>
+                                <p>Измельчитель зерна 300 кг/час</p>
+                                <div class="price_block">
+                                    <span class="price">
+                                        3 870 ₽
+                                    </span>
+                                    <div class="add_to_cart">
+                                        <form action="#">
+                                            <button type="submit" class="sl-btn sl-btn-primary">В корзину</button>
+                                        </form> 
+                                    </div>                                                                                               
+                                </div>
+                            </div>                                            
+                        </div>
+                        <!-- / item -->
+                        <!-- item -->
+                        <div class="item">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="img/product.png" alt="">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <a href="#" class="title">ИЗЭ-14</a>
+                                <p>Измельчитель зерна 300 кг/час</p>
+                                <div class="price_block">
+                                    <span class="price">
+                                        3 870 ₽
+                                    </span>
+                                    <div class="add_to_cart">
+                                        <form action="#">
+                                            <button type="submit" class="sl-btn sl-btn-primary">В корзину</button>
+                                        </form> 
+                                    </div>                                                                                               
+                                </div>
+                            </div>                                            
+                        </div>
+                        <!-- / item -->
+                        <!-- item -->
+                        <div class="item">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="img/product.png" alt="">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <a href="#" class="title">ИЗЭ-14</a>
+                                <p>Измельчитель зерна 300 кг/час</p>
+                                <div class="price_block">
+                                    <span class="price">
+                                        3 870 ₽
+                                    </span>
+                                    <div class="add_to_cart">
+                                        <form action="#">
+                                            <button type="submit" class="sl-btn sl-btn-primary">В корзину</button>
+                                        </form> 
+                                    </div>                                                                                               
+                                </div>
+                            </div>                                            
+                        </div>
+                        <!-- / item -->
+                        <!-- item -->
+                        <div class="item">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="img/product.png" alt="">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <a href="#" class="title">ИЗЭ-14</a>
+                                <p>Измельчитель зерна 300 кг/час</p>
+                                <div class="price_block">
+                                    <span class="price">
+                                        3 870 ₽
+                                    </span>
+                                    <div class="add_to_cart">
+                                        <form action="#">
+                                            <button type="submit" class="sl-btn sl-btn-primary">В корзину</button>
+                                        </form> 
+                                    </div>                                                                                               
+                                </div>
+                            </div>                                            
+                        </div>
+                        <!-- / item -->
+                        <!-- item -->
+                        <div class="item">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="img/product.png" alt="">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <a href="#" class="title">ИЗЭ-14</a>
+                                <p>Измельчитель зерна 300 кг/час</p>
+                                <div class="price_block">
+                                    <span class="price">
+                                        3 870 ₽
+                                    </span>
+                                    <div class="add_to_cart">
+                                        <form action="#">
+                                            <button type="submit" class="sl-btn sl-btn-primary">В корзину</button>
+                                        </form> 
+                                    </div>                                                                                               
+                                </div>
+                            </div>                                            
+                        </div>
+                        <!-- / item -->
+                        <!-- item -->
+                        <div class="item">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="img/product.png" alt="">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <a href="#" class="title">ИЗЭ-14</a>
+                                <p>Измельчитель зерна 300 кг/час</p>
+                                <div class="price_block">
+                                    <span class="price">
+                                        3 870 ₽
+                                    </span>
+                                    <div class="add_to_cart">
+                                        <form action="#">
+                                            <button type="submit" class="sl-btn sl-btn-primary">В корзину</button>
+                                        </form> 
+                                    </div>                                                                                               
+                                </div>
+                            </div>                                            
+                        </div>
+                        <!-- / item -->
+                        <!-- item -->
+                        <div class="item">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="img/product.png" alt="">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <a href="#" class="title">ИЗЭ-14</a>
+                                <p>Измельчитель зерна 300 кг/час</p>
+                                <div class="price_block">
+                                    <span class="price">
+                                        3 870 ₽
+                                    </span>
+                                    <div class="add_to_cart">
+                                        <form action="#">
+                                            <button type="submit" class="sl-btn sl-btn-primary">В корзину</button>
+                                        </form> 
+                                    </div>                                                                                               
+                                </div>
+                            </div>                                            
+                        </div>
+                        <!-- / item -->
+                        <!-- item -->
+                        <div class="item">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="img/product.png" alt="">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <a href="#" class="title">ИЗЭ-14</a>
+                                <p>Измельчитель зерна 300 кг/час</p>
+                                <div class="price_block">
+                                    <span class="price">
+                                        3 870 ₽
+                                    </span>
+                                    <div class="add_to_cart">
+                                        <form action="#">
+                                            <button type="submit" class="sl-btn sl-btn-primary">В корзину</button>
+                                        </form> 
+                                    </div>                                                                                               
+                                </div>
+                            </div>                                            
+                        </div>
+                        <!-- / item -->
+                    </div>
+                </div>
+            </section>
+            <section class="sl-def-section">
+                <div class="sl-base_wrapper">
+                  <h2>Журнал</h2>
+                  <div class="def-slider magazine-slider owl-carousel">
+                    <!-- item -->
+                    <a href="#" class="item">
+                      <img src="img/magazine/mag1.jpg" alt="">
+                    </a>
+                    <!-- item -->
+                    <!-- item -->
+                    <a href="#" class="item">
+                      <img src="img/magazine/mag2.jpg" alt="">
+                    </a>
+                    <!-- item -->
+                    <!-- item -->
+                    <a href="#" class="item">
+                      <img src="img/magazine/mag3.jpg" alt="">
+                    </a>
+                    <!-- item -->
+                    <!-- item -->
+                    <a href="#" class="item">
+                      <img src="img/magazine/mag4.jpg" alt="">
+                    </a>
+                    <!-- item -->
+                    <!-- item -->
+                    <a href="#" class="item">
+                      <img src="img/magazine/mag1.jpg" alt="">
+                    </a>
+                    <!-- item -->
+                    <!-- item -->
+                    <a href="#" class="item">
+                      <img src="img/magazine/mag2.jpg" alt="">
+                    </a>
+                    <!-- item -->
+                    <!-- item -->
+                    <a href="#" class="item">
+                      <img src="img/magazine/mag3.jpg" alt="">
+                    </a>
+                    <!-- item -->
+                    <!-- item -->
+                    <a href="#" class="item">
+                      <img src="img/magazine/mag4.jpg" alt="">
+                    </a>
+                    <!-- item -->
+                  </div>
+                </div>
+              </section>
         </main>
         <footer class="sl_footer">
 	<div class="sl-base_wrapper">
@@ -411,41 +896,20 @@
                     </li>
                 </ul>
             </div>
-            <div class="d-col-lg-6">
-                <a href="#" class="sl_title">Каталог товаров</a>
-                <div class="sl_catalog">
-                    <div class="sl-row">
-                        <div class="d-col-6">
-                            <ul>
-                                <li><a href="#">Измельчители зерна</a></li>
-                                <li><a href="#">Доильные агрегаты</a></li>
-                                <li><a href="#">Измельчители корма</a></li>
-                                <li><a href="#">Домашние кормоцеха универсальные</a></li>
-                                <li><a href="#">Агрегаты плющения зерна</a></li>
-                                <li><a href="#">Маслобойки, электросепараторы</a></li>
-                            </ul>
-                        </div>
-                        <div class="d-col-6">
-                            <ul>
-                                <li><a href="#">Товары для птицы</a></li>
-                                <li><a href="#">Товары для дома</a></li>
-                                <li><a href="#">Товары для сада</a></li>
-                                <li><a href="#">Товары для отдыха</a></li>
-                                <li><a href="#">Товары для рыбалки</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="d-col-lg-2">
-                <div class="sl_b_catalog">                    
+            <div class="d-col-lg-8">
+                <div class="sl_b_catalog">                     
                     <ul>
+                        <li><a href="#" class="sl_title">Каталог товаров</a></li>
                         <li><a href="#" class="sl_title">Каталог запчастей</a></li>
                         <li><a href="#" class="sl_title">Оплата и доставка</a></li>
                         <li><a href="#" class="sl_title">Акции</a></li>
-                        <li><a href="#" class="sl_title">Гарантия</a></li>
+                        <li><a href="#" class="sl_title">Гарантия и сервис</a></li>
+                        <li><a href="#" class="sl_title">Журнал</a></li>
+                        <li><a href="#" class="sl_title">Контакты</a></li>
                         <li><a href="#" class="sl_title">Новости</a></li>
-                        <li><a href="#" class="sl_title">Полезные материалы</a></li>
+                        <li><a href="#" class="sl_title">О компании</a></li>
+                        <li><a href="#" class="sl_title">Как стать дилером</a></li>
+                        <li><a href="#" class="sl_title">Политика обработки персональных данных</a></li>
                     </ul>                       
                 </div>
             </div>
@@ -544,16 +1008,98 @@
       </div>
     </div>
 </div>
+<div class="modal fade" id="pass_reset_success" tabindex="-1" aria-labelledby="pass_reset_success_title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="modal_success">
+                <div class="image">
+                    <img src="img/icons/success.svg" alt="">
+                </div>
+                <div class="text">
+                    <span class="title">Мы отправили пароль вам на почту</span>
+                    <span class="desc">Если письмо не пришло,<br/> позвоните по телефону +7 351 217-06-17</span>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="modal fade" id="oplata" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Как оплатить банковской картой</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h6>Какие карты подходят</h6>
+            <p>Visa, Mastercard, Maestro, Мир, American Express, Diners Club и JCB </p>
+            <h6>Как платить</h6>
+            <ol>
+                <li class="paymentPopUp__text">
+                  Выберите способ оплаты Банковская карта — в магазине, где собираетесь платить, или на странице ЮKassa.
+                  <img class="paymentPopUp__img" src="img/deliverypage/instructions-cards-01.png">
+                </li>
+                <li class="paymentPopUp__text">
+                  Если ЮKassa вас узнала, вы увидите карту, которой платили в прошлый раз, и сможете сразу её выбрать. Для оплаты нужен только CVC (это код из трёх или четырёх, обычно на обратной стороне карты).
+                  <img class="paymentPopUp__img" src="img/deliverypage/instructions-cards-02.png">
+                  <p class="paymentPopUp__text">
+                    Если ЮKassa не помнит вашу карту, введите её данные: номер, срок действия и CVC, и нажмите Заплатить. Чтобы получить квитанцию, заполните адрес эл. почты.
+                  </p>
+                  <img class="paymentPopUp__img" src="img/deliverypage/instructions-cards-03.png">
+                </li>
+                <li class="paymentPopUp__text">
+                  Подтвердите платёж — если банку, выпустившему вашу карту, нужно подтверждение.
+                  <img class="paymentPopUp__img" src="img/deliverypage/instructions-cards-04.png">
+                </li>
+                <li class="paymentPopUp__text">
+                  Готово. Платёж прошёл, вы можете вернуться на сайт, где начинали платить, по кнопке Вернуться в магазин внизу страницы.
+                </li>
+              </ol>
+        </div>
+      </div>
+    </div>
+</div>
 <!-- / MODALS -->
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script src="libs/bootstrap/js/bootstrap.min.js"></script>
 <script src="libs/owlcarousel2/dist/owl.carousel.min.js"></script>
 <script src="libs/match-height/dist/jquery.matchHeight-min.js"></script>
 <script src="libs/fancybox/dist/jquery.fancybox.min.js"></script>
 <script src="libs/maskedinput/dist/jquery.maskedinput.min.js"></script>
 <script src="js/main.js?time=5"></script>
+<script>
+    $(document).ready(function(){
+        if($("#contact_map").length){
+            ymaps.ready(function(){
+                var myMap = new ymaps.Map("contact_map", {
+                    center: [55.088225, 60.126028],
+                    zoom: 16
+                }, {
+                    searchControlProvider: 'yandex#search'
+                });
+                var myGeoObject = new ymaps.Placemark([55.088225, 60.126028], {
+                    balloonContent: 'ООО "Уралспецмаш"'
+                }, {
+                    preset: 'islands#icon',
+                    iconColor: '#002fa8'
+                });
+                myMap.geoObjects.add(myGeoObject);
+                myMap.behaviors.disable('multiTouch');
+                myMap.behaviors.disable('drag');
+                myMap.behaviors.disable('scrollZoom');
+            });
+        }
+    });
+</script>
 </body>
 
 </html>

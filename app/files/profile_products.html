@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  @@include('./includes/meta.html')
+</head>
+
+<body>
+  <div class="sl_wrapper">
+    @@include('./includes/header.html')
+    <main class="sl_main">
+      @@include('./includes/breadcrumbs.html')
+      <section class="sl-def-section content withovh">
+        <div class="sl-base_wrapper">
+            <div class="sl-row">
+                <div class="d-col-md-3">
+                    <div class="sl_side_menu">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="sl_icon sl_icon-orders"></i>
+                                    <span>Список заказов</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#">
+                                    <i class="sl_icon sl_icon-cog"></i>
+                                    <span>Настройки</span>
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="#">
+                                    <i class="sl_icon fa fa-barcode"></i>
+                                    <span>Товары</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-col-md-9">
+                    <div class="sl-profile">
+                        <h3>Выберите организацию</h3>
+                        <div class="select_stores">
+                            <div class="sl-row">
+                                <div class="d-col-md-6 d-col-12">
+                                    <div class="store">
+                                        <a href="tovaryi?type=slStores&amp;col_id=1" class="store_title">Тестовый магазин</a>
+                                    </div>
+                                </div>
+                                <div class="d-col-md-6 d-col-12">
+                                    <div class="store">
+                                        <a href="tovaryi?type=slWarehouse&amp;col_id=1" class="store_title">Тестовый склад</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile_products">
+                            <div class="profile-products__filter">
+                                <form action="#">
+                                    <div class="sl-row align-items-center">
+                                        <div class="d-col-md-6">
+                                            <div class="form_input_group input_pl input-parent required">
+                                                <input type="text" id="receiver" placeholder="Наименование, артикул" name="name" value="" class="base_input">
+                                                <label for="receiver" class="s-complex-input__label">Наименование, артикул</label>
+                                            </div>
+                                        </div>
+                                        <div class="d-col-md-6">
+                                            <div class="sl-form-group">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" name="only_remains" id="only_remains">
+                                                    <label class="form-check-label" for="only_remains">
+                                                      Поиск только в остатках
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                   
+                                </form>
+                            </div>
+                            <div class="profile-products__products">
+                                <div class="profile-products__total">
+                                    <span>Всего: <span class="total">36</span></span>
+                                </div>
+                                <!-- item -->
+                                <div class="profile-products__item" id="1">
+                                    <div class="deleter">
+                                        <form method="post" class="sl_form">
+                                            <input type="hidden" name="key" value="1">
+                                            <input type="hidden" name="store" value="1">
+                                            <input type="hidden" name="type" value="slStores">
+                                            <button class="sl-btn sl-btn-text" type="submit" name="sl_action" value="product/remove" title="Удалить"><i class="fa fa-trash" aria-hidden="true"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <div class="sl-row sl-align-items-center profile-products__item-wrap">
+                                        <div class="d-col-6 d-col-md-2">
+                                            <div class="image">
+                                                <img src="/img/products/product_1.png" alt="ИЗЭ-05" title="ИЗЭ-05">
+                                            </div>
+                                        </div>
+                                        <div class="d-col-6 d-col-md-6">
+                                            <span class="article">00-00000952</span>
+                                            <span class="name">ИЗЭ-05</span>
+                                            <span class="count">2 шт.</span>
+                                            <div class="price_mobile">
+                                                <span class="price"><span>4 380</span> руб.</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-col-12 d-col-md-4 price_wrap">
+                                            <span class="price"><span>4 380</span> руб.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / item -->
+                                <!-- item -->
+                                <div class="profile-products__item" id="1" data-type="slStores">
+                                    <div class="deleter">
+                                        <form method="post" class="sl_form">
+                                            <input type="hidden" name="key" value="1">
+                                            <input type="hidden" name="store" value="1">
+                                            <input type="hidden" name="type" value="slStores">
+                                            <button class="sl-btn sl-btn-text" type="submit" name="sl_action" value="product/remove" title="Удалить"><i class="fa fa-trash" aria-hidden="true"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <div class="sl-row sl-align-items-center profile-products__item-wrap">
+                                        <div class="d-col-6 d-col-md-2">
+                                            <div class="image">
+                                                <img src="/img/products/product_1.png" alt="ИЗЭ-05" title="ИЗЭ-05">
+                                            </div>
+                                        </div>
+                                        <div class="d-col-6 d-col-md-6">
+                                            <span class="article">00-00000952</span>
+                                            <span class="name">ИЗЭ-05</span>
+                                            <span class="count">2 шт.</span>
+                                            <div class="price_mobile">
+                                                <span class="price"><span>4 380</span> руб.</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-col-12 d-col-md-4 price_wrap">
+                                            <span class="price"><span>4 380</span> руб.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / item -->
+                                <div class="paging">
+                                    <nav>
+                                        <ul class="pagination justify-content-center">
+                                            <li class="page-item active">
+                                                <a class="page-link" href="#">1</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">2</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                    <span aria-hidden="true">»</span>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>    		  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+    </main>
+    @@include('./includes/footer.html')
+  </div>
+  @@include('./includes/scripts.html')
+</body>
+
+</html>

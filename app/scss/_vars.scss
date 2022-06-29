@@ -1,6 +1,6 @@
 $primary-color:         #f2a900;
 $secondary-color:       #c4d600;
-$thirdy-color:          #ff1820;
+$thirdy-color:          #F27400;
 
 $grey:                  #75787b;
 $grey-light:            #acacaa;
@@ -11,11 +11,11 @@ $font-stack:            'Montserrat', sans-serif;
 $circe:                 'Circe', sans-serif;
 $font-awesome:          "Font Awesome 5 Pro";
 
-$desktop:               "1800px";   // xxl
-$small-desktop:         "1200px";   // xl
-$tablets:               "991px";    // lg
-$small-tablets:         "768px";    // md
-$big-phones:            "600px";    // sm
-$phones:                "430px";
+$desktop:               "1800px";   // xxl  	d-col-xxl-{1-12}
+$small-desktop:         "1200px";   // xl		d-col-xl-{1-12}
+$tablets:               "991px";    // lg		d-col-lg-{1-12}
+$small-tablets:         "768px";    // md		d-col-md-{1-12}
+$big-phones:            "600px";    // sm		d-col-sm-{1-12}
+$phones:                "430px";	// from 0	d-col-{1-12}
 
-$shadow:                0px 0px 1px 2px rgba(0, 0, 0, 0.05);
+$shadow:                0px 4px 4px rgba(0, 0, 0, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.07), 0px 2px 1px rgba(0, 0, 0, 0.07);

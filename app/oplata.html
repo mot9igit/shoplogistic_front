@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffffff">
+<title>Shoplogistic</title>
+<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="libs/owlcarousel2/dist/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="libs/fontawesome5/css/all.min.css">
+<link rel="stylesheet" href="libs/fontawesome5/css/v4-shims.min.css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="libs/fancybox/dist/jquery.fancybox.min.css">
+<link rel="stylesheet" href="libs/icofont.css">
+<link rel="stylesheet" href="css/style.css?id=90">
+</head>
+
+<body>
+    <div class="sl_wrapper">
+        <header class="sl_header">
+    <div class="sl_header-top">
+        <div class="sl-base_wrapper">
+            <div class="sl_top-info">
+                <div class="geo_data">
+                    <div class="sl-item city_check">
+                        <a href="#">
+                            <span>г. Миасс</span>
+                        </a>
+                        <div class="city_popup">
+                            <span>Вы находитесь в г. Пермь?</span>
+                            <div class="buttons">
+                                <a href="#" class="sl-btn sl-btn-outline-secondary">Нет, другой</a>
+                                <a href="#" class="sl-btn sl-btn-primary">Да, верно</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sl-item sl-item-store">
+                        <a href="#">
+                            <i class="sl_icon sl_icon-map-marker"></i>
+                            <span>Магазин</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="sl-item sl-item-phone">
+                    <i class="sl_icon sl_icon-phone"></i>
+                    <a href="tel:+73512170617">+7 351 217-06-17</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sl_header-bottom">
+        <div class="sl-base_wrapper">
+            <div class="sl-row sl-align-items-center">
+                <div class="d-col-md-2">
+                    <div class="sl_logo">
+                        <a href="#">
+                            <img src="img/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="d-col-md-10">
+                    <div class="sl_navigation">
+                        <ul>
+                            <li>
+                                <a href="#">Каталог товаров</a>
+                                <ul>
+                                    <li><a href="#">Измельчители зерна</a></li>
+                                    <li><a href="#">Доильные агрегаты</a></li>
+                                    <li><a href="#">Измельчители корма</a></li>
+                                    <li><a href="#">Домашние кормоцеха универсальные</a></li>
+                                    <li><a href="#">Агрегаты плющения зерна</a></li>
+                                    <li><a href="#">Маслобойки, электросепараторы</a></li>
+                                    <li><a href="#">Товары для птицы</a></li>
+                                    <li><a href="#">Товары для дома</a></li>
+                                    <li><a href="#">Товары для сада</a></li>
+                                    <li><a href="#">Товары для отдыха</a></li>
+                                    <li><a href="#">Товары для рыбалки</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Каталог запчастей</a>
+                            </li>
+                            <li>
+                                <a href="#">Оплата и доставка</a>
+                            </li>
+                            <li>
+                                <a href="#">Акции</a>
+                            </li>
+                            <li>
+                                <a href="#">Гарантия</a>
+                            </li>
+                            <li>
+                                <a href="#">Журнал</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                            <li>
+                                <div id="msMiniCart" class="sl_minicart ">
+                                    <div class="empty">
+                                        <a href="#">
+                                            <i class="sl_icon sl_icon-cart"></i>
+                                            <span class="sl_minicart-count ms2_total_count">0</span>
+                                        </a>
+                                    </div>
+                                    <div class="not_empty">
+                                        <a href="#">
+                                            <i class="sl_icon sl_icon-cart"></i>
+                                            <span class="sl_minicart-count ms2_total_count">0</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sl_user_profile">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#auth">
+                                        <i class="sl_icon sl_icon-user"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>           
+        </div>   
+    </div>
+    <div class="sl_header-mobile">
+        <div class="sl-base_wrapper">
+            <div class="sl-row sl-align-items-center">
+                
+                <div class="d-col-sm-2 d-col-2">
+                    <div class="sl_logo">
+                        <a href="#">
+                            <img src="img/logo_mobile.svg" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="d-col-sm-8 d-col-8">
+                    <div class="geo_data">
+                        <div class="sl-item city_check">
+                            <a href="#">
+                                <span>г. Миасс</span>
+                            </a>
+                            <div class="city_popup">
+                                <span>Вы находитесь в г. Пермь?</span>
+                                <div class="buttons">
+                                    <a href="#" class="sl-btn sl-btn-outline-secondary">Нет, другой</a>
+                                    <a href="#" class="sl-btn sl-btn-primary">Да, верно</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sl-item sl-item-store">
+                            <a href="#">
+                                <i class="sl_icon sl_icon-map-marker"></i>
+                                <span>Магазин</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-col-sm-2 d-col-2 flex-right">
+                    <a href="#" class="sl_burger sl_noactive">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+            <div class="sl_mobile-menu">
+                <ul class="sl_m-menu">
+                    <li>
+                        <a href="#">Каталог товаров</a>
+                    </li>
+                    <li>
+                        <a href="#">Каталог запчастей</a>
+                    </li>
+                    <li>
+                        <a href="#">Оплата и доставка</a>
+                    </li>
+                    <li>
+                        <a href="#">Акции</a>
+                    </li>
+                    <li>
+                        <a href="#">Гарантия</a>
+                    </li>
+                    <li>
+                        <a href="#">Журнал</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+                <div class="sl_mobile-contacts">
+                    <a href="tel:+73512170617" class="sl_phone">+7 351 217-06-17</a>
+                    <span class="sl_desc">6:00 - 15:00 (МСК)</span>
+                    <span class="sl_desc">456313, РФ, Челябинская область, <br/>г. Миасс, Тургоякское шоссе, 9/17</span>
+                    <ul class="sl_socials">
+                        <li>
+                            <a href="#">
+                                <span class="sl_icon sl_icon-vk"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="sl_icon sl_icon-youtube"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="mobile_navigation">
+    <ul>
+        <li>
+            <a href="#">
+                <i class="icon icon-home"></i>
+                <span>Главная</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="toggle_catalog">
+                <i class="icon icon-catalog"></i>
+                <span>Каталог</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="sl_minicart msMiniCart">
+                    <div class="empty">
+                        <i class="icon icon-cart"></i>
+                        <span class="sl_minicart-count ms2_total_count">0</span>
+                    </div>
+                    <div class="not_empty">
+                        <i class="icon icon-cart"></i>
+                        <span class="sl_minicart-count ms2_total_count">0</span>
+                    </div>
+                </div>               
+                <span>Корзина</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="toggle_lk">
+                <i class="icon icon-user"></i>
+                <span>Кабинет</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="mobile_catalog mobile_menu_catalog">
+    <div class="mobile-catalog__content">
+        <div class="root_menu active">
+            <div class="sl_side_menu">
+                <ul>
+                    <li class="has_children">
+                        <a href="#products_menu" data-target="#products_menu">
+                            <span>Каталог товаров</span>
+                        </a>
+                    </li>
+                    <li class="has_children">
+                        <a href="#details_menu">
+                            <span>Каталог запчастей</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mobile-catalog__inner-block" id="products_menu">
+            <div class="sl_side_menu">
+                <ul class="mobile_inner_menu" id="products_menu">
+                    <li>
+                        <a href="#" data-target=".root_menu" class="back">
+                            <span>Назад</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-izm_zer"></i>
+                            <span>Измельчители зерна</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-doi_agr"></i>
+                            <span>Доильные агрегаты</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-izm_korm"></i>
+                            <span>Измельчители корма</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-dom_korm"></i>
+                            <span>Домашние кормоцеха универсальные</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-plush"></i>
+                            <span>Агрегаты плющения зерна</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-maslo"></i>
+                            <span>Маслобойки, электросепараторы</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-ptic"></i>
+                            <span>Товары для птицы</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-dom"></i>
+                            <span>Товары для дома</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-sad"></i>
+                            <span>Товары для сада</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-otdyh"></i>
+                            <span>Товары для отдыха</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-ryb"></i>
+                            <span>Товары для рыбалки</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>       
+</div>
+
+<div class="mobile_catalog mobile_menu_lk">
+    <div class="mobile-catalog__content">
+        <div class="root_menu active">
+            <div class="sl_side_menu">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="sl_icon sl_icon-orders"></i>
+                            <span>Список заказов</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <i class="sl_icon sl_icon-cog"></i>
+                            <span>Настройки</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>       
+</div>
+        <main class="sl_main">
+            <div class="breadcrumbs ">
+    <div class="sl-base_wrapper">
+      <nav aria-label="breadcrumb">
+            <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a href="/" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1">
+                </li>
+                <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a href="dostavka.html" itemprop="item"><span itemprop="name">Доставка</span></a><meta itemprop="position" content="2">
+                </li>
+            </ol>	
+        </nav>
+    </div>
+</div>
+            <section class="sl-def-section">
+                <div class="sl-base_wrapper">
+                    <h1>Оплата и доставка</h1>
+                    <div class="icons_block icons_block_coloumn">
+                        <div class="sl-row">
+                            <!-- item -->
+                            <div class="d-col-md-3 d-col-6">
+                                <div class="item">
+                                    <div class="default_icon">
+                                        <i class="icon icon-cart-alt"></i>
+                                    </div>
+                                    <div class="text">
+                                        <span class="title">1. Добавьте товар в корзину</span>
+                                        <p>Или сделайте заказ через нашего менеджера, позвонив по телефону: +7 (351)
+                                            217–06–17</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / item -->
+                            <!-- item -->
+                            <div class="d-col-md-3 d-col-6">
+                                <div class="item">
+                                    <div class="default_icon">
+                                        <i class="icon icon-money"></i>
+                                    </div>
+                                    <div class="text">
+                                        <span class="title">2. Оплатите товар удобным способом</span>
+                                        <p>Оплата на сайте, в терминале, салоне сотовой связи, либо в кредит (рассрочку)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / item -->
+                            <!-- item -->
+                            <div class="d-col-md-3 d-col-6">
+                                <div class="item">
+                                    <div class="default_icon">
+                                        <i class="icon icon-truck"></i>
+                                    </div>
+                                    <div class="text">
+                                        <span class="title">3. Выберите оптимальный способ доставки</span>
+                                        <p>Мы отправляем любой транспортной компанией</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / item -->
+                            <!-- item -->
+                            <div class="d-col-md-3 d-col-6">
+                                <div class="item">
+                                    <div class="default_icon">
+                                        <i class="icon icon-handshake"></i>
+                                    </div>
+                                    <div class="text">
+                                        <span class="title">4. Получите товар и оплатите доставку</span>
+                                        <p>После отправки мы пришлем вам код для отслеживания вашего груза</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / item -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sl-def-section">
+                <div class="sl-base_wrapper">
+                    <h2>Способы оплаты</h2>
+                    <div class="icons_href_block">
+                        <div class="sl-row">
+                            <!-- item -->
+                            <div class="d-col-md-3 d-col-6">
+                                <a href="#oplata" class="item" data-bs-toggle="modal" data-bs-target="#oplata">
+                                    <div class="item_icon">
+                                        <i class="icon icon-card"></i>
+                                    </div>
+                                    <div class="item_text">
+                                        <span>Банковская карта</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- / item -->
+                            <!-- item -->
+                            <div class="d-col-md-3 d-col-6">
+                                <a href="#" class="item">
+                                    <div class="item_icon">
+                                        <i class="icon icon-phone"></i>
+                                    </div>
+                                    <div class="item_text">
+                                        <span>Баланс телефона</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- / item -->
+                            <!-- item -->
+                            <div class="d-col-md-3 d-col-6">
+                                <a href="#" class="item">
+                                    <div class="item_icon">
+                                        <i class="icon icon-pie-chart"></i>
+                                    </div>
+                                    <div class="item_text">
+                                        <span>Заплатить по частям</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- / item -->
+                            <!-- item -->
+                            <div class="d-col-md-3 d-col-6">
+                                <a href="#" class="item">
+                                    <div class="item_icon">
+                                        <i class="icon icon-cash"></i>
+                                    </div>
+                                    <div class="item_text">
+                                        <span>Наличные (терминал)</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- / item -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="sl_footer">
+	<div class="sl-base_wrapper">
+        <div class="sl-row">
+            <div class="d-col-lg-4 order-mobile-3">
+                <a href="tel:+73512170617" class="sl_phone">+7 351 217-06-17</a>
+                <span class="sl_desc">456313, РФ, Челябинская область, <br/>г. Миасс, Тургоякское шоссе, 9/17</span>
+                <ul class="sl_socials">
+                    <li>
+                        <a href="#">
+                            <span class="sl_icon sl_icon-vk"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="sl_icon sl_icon-youtube"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="sl_icon sl_icon-instagram"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-col-lg-8">
+                <div class="sl_b_catalog">                     
+                    <ul>
+                        <li><a href="#" class="sl_title">Каталог товаров</a></li>
+                        <li><a href="#" class="sl_title">Каталог запчастей</a></li>
+                        <li><a href="#" class="sl_title">Оплата и доставка</a></li>
+                        <li><a href="#" class="sl_title">Акции</a></li>
+                        <li><a href="#" class="sl_title">Гарантия и сервис</a></li>
+                        <li><a href="#" class="sl_title">Журнал</a></li>
+                        <li><a href="#" class="sl_title">Контакты</a></li>
+                        <li><a href="#" class="sl_title">Новости</a></li>
+                        <li><a href="#" class="sl_title">О компании</a></li>
+                        <li><a href="#" class="sl_title">Как стать дилером</a></li>
+                        <li><a href="#" class="sl_title">Политика обработки персональных данных</a></li>
+                    </ul>                       
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- MODALS -->
+<div class="modal fade" id="auth" tabindex="-1" aria-labelledby="auth" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="auth">Авторизация</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="#" class="sl_auth">
+                <div class="form_input_group">
+                    <label for="auth_login">Логин или email</label>
+                    <input type="text" id="auth_login" placeholder="Логин" name="login" value="" class="required">                    
+                </div>
+                <div class="form_input_group">
+                    <label for="auth_password">Пароль</label>
+                    <input type="text" id="auth_password" placeholder="Пароль" name="password" value="" class="required">                   
+                    <div class="desc">
+                        <a href="#">Забыли пароль?</a>
+                    </div>
+                </div>
+                <div class="form_input_group text-center">
+                    <a href="#" class="sl-btn sl-btn-primary-b" data-bs-toggle="modal" data-bs-target="#register">Регистрация</a>
+                    <button class="sl-btn sl-btn-primary">
+                        <span class="tm">Войти</span>
+                    </button>
+                </div>
+                <div class="socials text-center">
+                    <ul class="sl_socials">
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/google.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/yandex.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/vk_auth.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="register" tabindex="-1" aria-labelledby="register" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="register">Регистрация</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="#" class="sl_auth">
+                <div class="form_input_group">
+                    <label for="register_email">Email</label>
+                    <input type="text" id="register_email" placeholder="Email" name="email" value="" class="required">                    
+                </div>
+                <div class="form_input_group">
+                    <label for="register_phone">Телефон</label>
+                    <input type="text" id="register_phone" placeholder="Телефон" name="phone" value="" class="required">                    
+                </div>
+                <div class="form_input_group">
+                    <label for="register_fullname">Имя</label>
+                    <input type="text" id="register_fullname" placeholder="Имя" name="fullname" value="" class="required">                    
+                </div>
+                <div class="form_input_group">
+                    <label for="register_login">Логин</label>
+                    <input type="text" id="register_login" placeholder="Логин" name="login" value="" class="required">                    
+                </div>
+                <div class="form_input_group">
+                    <label for="register_password">Пароль</label>
+                    <input type="text" id="register_password" placeholder="Пароль" name="password" value="" class="required">
+                </div>
+                <div class="form_input_group text-center">
+                    <a href="#" class="sl-btn sl-btn-primary-b" data-bs-toggle="modal" data-bs-target="#auth">Войти</a>
+                    <button class="sl-btn sl-btn-primary">
+                        <span class="tm">Регистрация</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="modal fade" id="pass_reset_success" tabindex="-1" aria-labelledby="pass_reset_success_title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="modal_success">
+                <div class="image">
+                    <img src="img/icons/success.svg" alt="">
+                </div>
+                <div class="text">
+                    <span class="title">Мы отправили пароль вам на почту</span>
+                    <span class="desc">Если письмо не пришло,<br/> позвоните по телефону +7 351 217-06-17</span>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="modal fade" id="oplata" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Как оплатить банковской картой</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h6>Какие карты подходят</h6>
+            <p>Visa, Mastercard, Maestro, Мир, American Express, Diners Club и JCB </p>
+            <h6>Как платить</h6>
+            <ol>
+                <li class="paymentPopUp__text">
+                  Выберите способ оплаты Банковская карта — в магазине, где собираетесь платить, или на странице ЮKassa.
+                  <img class="paymentPopUp__img" src="img/deliverypage/instructions-cards-01.png">
+                </li>
+                <li class="paymentPopUp__text">
+                  Если ЮKassa вас узнала, вы увидите карту, которой платили в прошлый раз, и сможете сразу её выбрать. Для оплаты нужен только CVC (это код из трёх или четырёх, обычно на обратной стороне карты).
+                  <img class="paymentPopUp__img" src="img/deliverypage/instructions-cards-02.png">
+                  <p class="paymentPopUp__text">
+                    Если ЮKassa не помнит вашу карту, введите её данные: номер, срок действия и CVC, и нажмите Заплатить. Чтобы получить квитанцию, заполните адрес эл. почты.
+                  </p>
+                  <img class="paymentPopUp__img" src="img/deliverypage/instructions-cards-03.png">
+                </li>
+                <li class="paymentPopUp__text">
+                  Подтвердите платёж — если банку, выпустившему вашу карту, нужно подтверждение.
+                  <img class="paymentPopUp__img" src="img/deliverypage/instructions-cards-04.png">
+                </li>
+                <li class="paymentPopUp__text">
+                  Готово. Платёж прошёл, вы можете вернуться на сайт, где начинали платить, по кнопке Вернуться в магазин внизу страницы.
+                </li>
+              </ol>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- / MODALS -->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="libs/owlcarousel2/dist/owl.carousel.min.js"></script>
+<script src="libs/match-height/dist/jquery.matchHeight-min.js"></script>
+<script src="libs/fancybox/dist/jquery.fancybox.min.js"></script>
+<script src="libs/maskedinput/dist/jquery.maskedinput.min.js"></script>
+<script src="js/main.js?time=5"></script>
+<script>
+    $(document).ready(function(){
+        if($("#contact_map").length){
+            ymaps.ready(function(){
+                var myMap = new ymaps.Map("contact_map", {
+                    center: [55.088225, 60.126028],
+                    zoom: 16
+                }, {
+                    searchControlProvider: 'yandex#search'
+                });
+                var myGeoObject = new ymaps.Placemark([55.088225, 60.126028], {
+                    balloonContent: 'ООО "Уралспецмаш"'
+                }, {
+                    preset: 'islands#icon',
+                    iconColor: '#002fa8'
+                });
+                myMap.geoObjects.add(myGeoObject);
+                myMap.behaviors.disable('multiTouch');
+                myMap.behaviors.disable('drag');
+                myMap.behaviors.disable('scrollZoom');
+            });
+        }
+    });
+</script>
+</body>
+
+</html>
