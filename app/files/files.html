@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('./includes/meta.html')
+</head>
+
+<body>
+    <div class="sl_wrapper">
+        @@include('./includes/header.html')
+        <main class="sl_main">
+            @@include('./includes/breadcrumbs.html')
+            <section class="sl-def-section">
+                <div class="sl-base_wrapper">
+                    <h1>Личный кабинет</h1>
+                    <div class="sl-row">
+                        <div class="d-col-md-3">
+                            <div class="sl_diler_widget">
+                                <a href="#operations" data-bs-toggle="modal" data-bs-target="#operations" class="sl_diler_widget__history">История операций</a>
+                                <div class="sl_diler_widget__info-text">
+                                    <div class="item">
+                                        <div class="label">Баланс</div>
+                                        <div class="value">1 000 000 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="sl_diler_widget__btn-container">
+                                    <a href="#" class="sl-btn sl-btn-primary">Вывести средства</a>
+                                </div>                                
+                            </div>
+                            <div class="sl_side_menu">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="sl_icon sl_icon-orders"></i>
+                                            <span>Список заказов</span>
+                                        </a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="#">
+                                            <i class="sl_icon sl_icon-users"></i>
+                                            <span>Настройки</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="sl_icon sl_icon-shipping"></i>
+                                            <span>Отгрузки</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="sl_icon sl_icon-products"></i>
+                                            <span>Товары</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="sl_icon sl_icon-dilers"></i>
+                                            <span>Мои дилеры</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="sl_icon sl_icon-documents"></i>
+                                            <span>Документы</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="d-col-md-9">
+                            <div class="sl-profile">
+                                <div class="files_block">
+                                    <!-- area -->
+                                    <div class="files_area">
+                                        <h2>Инструкции</h2>
+                                        <div class="files_list">
+                                            <div class="sl-row">
+                                                <!-- item -->
+                                                <div class="d-col-lg-3 d-col-md-4 d-col-6">
+                                                    <a href="#" class="item">
+                                                        <div class="image">
+                                                            <img src="img/files/pdf.png" alt="">
+                                                        </div>
+                                                        <div class="text">
+                                                            <span>Как пользоваться Личным кабинетом</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- /item -->
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                    <!-- / area -->
+                                    <!-- area -->
+                                    <div class="files_area">
+                                        <h2>Инструкции</h2>
+                                        <div class="files_list">
+                                            <div class="sl-row">
+                                                <!-- item -->
+                                                <div class="d-col-lg-3 d-col-md-4 d-col-6">
+                                                    <a href="#" class="item">
+                                                        <div class="image">
+                                                            <img src="img/files/pdf.png" alt="">
+                                                        </div>
+                                                        <div class="text">
+                                                            <span>Как пользоваться Личным кабинетом</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- /item -->
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                    <!-- / area -->
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('./includes/footer.html')
+    </div>
+    @@include('./includes/scripts.html')
+</body>
+
+</html>

@@ -8,6 +8,9 @@ const autoprefixer  = require('gulp-autoprefixer');
 const imagemin      = require('gulp-imagemin');
 const del           = require('del');
 const file_include 	= require('gulp-file-include');
+const gutil 		= require('gulp-util');
+const ftp 			= require('vinyl-ftp');
+const rsync 		= require('gulp-rsync');
 
 function browsersync() {
   browserSync.init({
@@ -15,6 +18,36 @@ function browsersync() {
       baseDir: 'app/'
     }
   });
+}
+
+function deploy() {
+	var conn = ftp.create({
+		host:      '92.53.96.171',
+		user:      'cq20499',
+		password:  'eg4gdbLt0Lzr',
+		parallel:  10
+	});
+
+	var globs = [
+		'app/**'		
+	];
+	return src(globs, {buffer: false})
+		.pipe(conn.dest('~/new.shopfermer24.ru/public_html/assets/templates/usm/test/'));
+};
+
+function sync() {
+	return src('app/css/**')
+	.pipe(rsync({
+		root: 'app/css/',
+		hostname: 'cq20499@92.53.96.171',
+		destination: '~/new.shopfermer24.ru/public_html/assets/templates/usm/test/',
+		// include: ['*.htaccess'], // Includes files to deploy
+		exclude: ['**/Thumbs.db', '**/*.DS_Store'], // Excludes files from deploy
+		recursive: true,
+		archive: true,
+		silent: false,
+		compress: true
+	}))
 }
 
 function cleanDist() {
@@ -114,6 +147,8 @@ exports.browsersync = browsersync;
 exports.scripts = scripts;
 exports.images = images;
 exports.cleanDist = cleanDist;
+exports.sync = sync;
+exports.deploy = deploy;
 
 
 exports.build = series(cleanDist, styles, styles_big, images, build);

@@ -5,7 +5,10 @@
     @@include('./includes/meta.html')
 </head>
 
-<body>
+<body class="loading">
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>    
     <div class="sl_wrapper">
         @@include('./includes/header.html')
         <main class="sl_main">
@@ -258,8 +261,55 @@
                                     </div>
                                 </div>
                             </div>
-
-
+                            
+                            <div class="dilers-shipping-list">
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="sl-row sl-align-items-center">
+                                        <div class="d-col-md-4 d-col-12">
+                                            <div class="text-block">
+                                                <span class="name">Наименование магазина</span>
+                                                <span class="desc">Населенный пункт</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-col-md-4 d-col-12">
+                                            <div class="text-block central-panel">
+                                                <span class="name">Дата ближайшей отгрузки</span>
+                                                <span class="desc">23.07.2022</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-col-md-4 d-col-12">
+                                            <div class="status success">
+                                                <span>Отгрузка запланирована</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / item -->
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="sl-row sl-align-items-center">
+                                        <div class="d-col-md-4 d-col-12">
+                                            <div class="text-block">
+                                                <span class="name">Наименование магазина</span>
+                                                <span class="desc">Населенный пункт</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-col-md-4 d-col-12">
+                                            <div class="text-block central-panel">
+                                                <span class="name">Дата ближайшей отгрузки</span>
+                                                <span class="desc">-</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-col-md-4 d-col-12">
+                                            <div class="status">
+                                                <span>Отгрузка не запланирована</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / item -->
+                            </div>
                         </div>
                     </div>
                 </div>

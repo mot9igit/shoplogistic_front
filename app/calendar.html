@@ -16,7 +16,10 @@
 <link rel="stylesheet" href="css/style.css?id=90">
 </head>
 
-<body>
+<body class="loading">
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>    
     <div class="sl_wrapper">
         <header class="sl_header">
     <div class="sl_header-top">
@@ -633,8 +636,55 @@
                                     </div>
                                 </div>
                             </div>
-
-
+                            
+                            <div class="dilers-shipping-list">
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="sl-row sl-align-items-center">
+                                        <div class="d-col-md-4 d-col-12">
+                                            <div class="text-block">
+                                                <span class="name">Наименование магазина</span>
+                                                <span class="desc">Населенный пункт</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-col-md-4 d-col-12">
+                                            <div class="text-block central-panel">
+                                                <span class="name">Дата ближайшей отгрузки</span>
+                                                <span class="desc">23.07.2022</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-col-md-4 d-col-12">
+                                            <div class="status success">
+                                                <span>Отгрузка запланирована</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / item -->
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="sl-row sl-align-items-center">
+                                        <div class="d-col-md-4 d-col-12">
+                                            <div class="text-block">
+                                                <span class="name">Наименование магазина</span>
+                                                <span class="desc">Населенный пункт</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-col-md-4 d-col-12">
+                                            <div class="text-block central-panel">
+                                                <span class="name">Дата ближайшей отгрузки</span>
+                                                <span class="desc">-</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-col-md-4 d-col-12">
+                                            <div class="status">
+                                                <span>Отгрузка не запланирована</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / item -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -792,6 +842,40 @@
                     <span class="desc">Если письмо не пришло,<br/> позвоните по телефону +7 351 217-06-17</span>
                 </div>
             </div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="modal fade" id="operations" tabindex="-1" aria-labelledby="operations_title" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">История операций</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+             <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Тип</th>
+                            <th>Дата</th>
+                            <th>Сумма</th>
+                            <th>Описание</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Списание</td>
+                            <td>4 060 ₽</td>
+                            <td>31.03.2022 10:33</td>
+                            <td>Комиссия</td>
+                        </tr>
+                    </tbody>
+                </table>
+             </div>
         </div>
       </div>
     </div>

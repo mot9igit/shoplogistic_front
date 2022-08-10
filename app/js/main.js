@@ -1,6 +1,10 @@
 $(document).ready(function(){
 	$(".eqh").matchHeight();
     // QUANTITY
+	/*
+
+	NOT FOR PROD
+
     $('.sl-quantity button.btn-count').click(function(e){
         e.preventDefault();
         var elem = $(this).closest('.sl-quantity').find('input.counter');
@@ -21,9 +25,12 @@ $(document).ready(function(){
     // ms2 pseudo submit
     $(".pseudo_submit").click(function(e) { 
 		e.preventDefault();
+		$('body').addClass("sl_noscroll");  
+		$('body').addClass('loading');
 		$(this).attr("disabled");
 		$("#msOrder .ms2_link").trigger("click");
 	});	
+	*/
     // mobile menu toggler
     $(".sl_burger").click(function(e) {
 		e.preventDefault();

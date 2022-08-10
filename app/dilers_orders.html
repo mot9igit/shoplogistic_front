@@ -391,7 +391,7 @@
                     <div class="sl-row">
                         <div class="d-col-md-3">
                             <div class="sl_diler_widget">
-                                <a href="#" class="sl_diler_widget__history">История операций</a>
+                                <a href="#operations" data-bs-toggle="modal" data-bs-target="#operations" class="sl_diler_widget__history">История операций</a>
                                 <div class="sl_diler_widget__info-text">
                                     <div class="item">
                                         <div class="label">Баланс</div>
@@ -478,6 +478,9 @@
                                                         <span class="value">42 737 ₽</span>
                                                     </div>
                                                </div>
+                                            </div>
+                                            <div class="diler_order__organization">
+                                                <span>ООО “Уралспецмаш"</span>
                                             </div>
                                         </a>
                                     </div>
@@ -641,6 +644,40 @@
                     <span class="desc">Если письмо не пришло,<br/> позвоните по телефону +7 351 217-06-17</span>
                 </div>
             </div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="modal fade" id="operations" tabindex="-1" aria-labelledby="operations_title" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">История операций</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+             <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Тип</th>
+                            <th>Дата</th>
+                            <th>Сумма</th>
+                            <th>Описание</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Списание</td>
+                            <td>4 060 ₽</td>
+                            <td>31.03.2022 10:33</td>
+                            <td>Комиссия</td>
+                        </tr>
+                    </tbody>
+                </table>
+             </div>
         </div>
       </div>
     </div>
